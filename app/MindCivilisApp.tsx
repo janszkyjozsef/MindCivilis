@@ -404,6 +404,564 @@ export function MindCivilisApp() {
           </span>
         </button>
         <nav aria-label="FÅ‘ navigÃ¡ciÃ³">
-          {stored?.scores ? <a href="#terkep">Az Ã©n tÃ¶ïnm¢G§²ÚîÆ­yÞµÁÕÌƒ
-Ü€ÈÀÈØð½ÍÁ…¸ø(€€€€€€€€ñ‘¥Øø(€€€€€€€€€€ñ‰ÕÑÑ½¸½¹±¥¬õì ¤€ôøÍ•Ñ9½Ñ¥•=Á•¸¡ÑÉÕ”¥ôù‘…Ñ­•é•³¥Ìð½‰ÕÑÑ½¸ø(€€€€€€€€€€ñ„(€€€€€€€€€€€¡É•˜ô‰¡ÑÑÁÌè¼½¥Ñ¡Õˆ¹½´½©…¹Íé­å©½éÍ•˜ˆ(€€€€€€€€€€€Ñ…É•Ðô‰}‰±…¹¬ˆ(€€€€€€€€€€€É•°ô‰¹½É•™•ÉÉ•Èˆ(€€€€€€€€€€ø(€€€€€€€€€€€-…ÁÍ½±…Ð(€€€€€€€€€€ð½„ø(€€€€€€€€ð½‘¥Øø(€€€€€€ð½™½½Ñ•Èø((€€€€€í½¹Í•¹Ñ=Á•¸€ü€ (€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰µ½‘…°µ‰…­‘É½Àˆø(€€€€€€€€€€ñÍ•Ñ¥½¸(€€€€€€€€€€€±…ÍÍ9…µ”ô‰½¹Í•¹Ðµµ½‘…°ˆ(€€€€€€€€€€€É½±”ô‰‘¥…±½œˆ(€€€€€€€€€€€…É¥„µµ½‘…°ô‰ÑÉÕ”ˆ(€€€€€€€€€€€…É¥„µ±…‰•±±•‘‰äô‰½¹Í•¹ÐµÑ¥Ñ±”ˆ(€€€€€€€€€€ø(€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰½¹Í•¹Ðµ½Áäˆø(€€€€€€€€€€€€€€ñ‘¥Øø(€€€€€€€€€€€€€€€€ñÍÁ…¸±…ÍÍ9…µ”ô‰½¹Í•¹Ðµ­¥­•ÈˆûY¹¯¥¹Ñ•Ì­ÕÑ…Ó…Ìƒ
-Ü€Äà¬ð½ÍÁ…¸ø(€€€€€€€€€€€€€€€€ñ Ä¥ô‰½¹Í•¹ÐµÑ¥Ñ±”ˆù5¥•³EÑÐ•±­•é‘«ñ¬ð½ Äø(€€€€€€€€€€€€€€€€ñÀø(€€€€€€€€€€€€€€€€€5¥¹‘¥Ù¥±¥Ì…éÐÙ¥éÍŸ…±©„°¡½å…¸É•¹‘•ëE‘¹•¬•å·…Í¡½è(€€€€€€€€€€€€€€€€€Ó…ÉÍ…‘…±µ¤»¥é•Ñ•¬¸Ë¥ÍéÛ¥Ñ•°ƒÙ¹¯¥¹Ñ•Ì¸!„¹•µ•Ðµ½¹‘…Íè°(€€€€€€€€€€€€€€€€€¹•´¯¥Ëñ¹¬‘•µ½Ë…™¥…¤Ù…ä¥‘•½³Í¥…¤Û…±…ÍéÐ¸(€€€€€€€€€€€€€€€€ð½Àø(€€€€€€€€€€€€€€€€ñÕ°ø(€€€€€€€€€€€€€€€€€€ñ±¤ù9¥¹Ì»¥Ø°”µµ…¥°Ù…ä¡¥É‘•Ó¥Í¤ÁÉ½™¥°¸ð½±¤ø(€€€€€€€€€€€€€€€€€€ñ±¤ùÙ¥ÍÍé…ÕÑ…ÏµÓ…ÍÐ¥ÌÍ…¬ƒ…±¹•Ù•ÏµÑ•ÑÐ­Õ±Í…°µ•¹Ñ«ñ¬¸ð½±¤ø(€€€€€€€€€€€€€€€€€€ñ±¤ù…Éµ¥­½È•áÁ½ÉÓ…±¡…Ñ½Ù…äÓÙËÙ±¡•Ñ•„Í…«…Ð…‘…Ñ…¥‘…Ð¸ð½±¤ø(€€€€€€€€€€€€€€€€ð½Õ°ø(€€€€€€€€€€€€€€ð½‘¥Øø(€€€€€€€€€€€€€€ñ‰ÕÑÑ½¸(€€€€€€€€€€€€€€€±…ÍÍ9…µ”ô‰¹½Ñ¥”µ±¥¹¬ˆ(€€€€€€€€€€€€€€€½¹±¥¬õì ¤€ôøÍ•Ñ9½Ñ¥•=Á•¸¡ÑÉÕ”¥ô(€€€€€€€€€€€€€€ø(€€€€€€€€€€€€€€€K¥Íé±•Ñ•Ì…‘…Ñ­•é•³¥Í¤Ó…«¥­½éÑ…ÓÌƒŠ\(€€€€€€€€€€€€€€ð½‰ÕÑÑ½¸ø(€€€€€€€€€€€€ð½‘¥Øø(€€€€€€€€€€€€ñ™½É´±…ÍÍ9…µ”ô‰½¹Í•¹Ðµ™½É´ˆ½¹MÕ‰µ¥Ðõí½¹Í•¹ÑI•Í•…É¡ôø(€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰™½É´µ¡•…‘¥¹œˆø(€€€€€€€€€€€€€€€€ñÀ±…ÍÍ9…µ”ô‰•å•‰É½Üˆù!„Ë¥ÍéÐÙ•Íé•°ð½Àø(€€€€€€€€€€€€€€€€ñ Èù;¥ä…±…Á…‘…Ñ½Ð¯¥Ëñ¹¬ð½ Èø(€€€€€€€€€€€€€€ð½‘¥Øø(€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰™¥•±µÉ¥ˆø(€€€€€€€€€€€€€€€€ñ±…‰•°ø(€€€€€€€€€€€€€€€€€9•´(€€€€€€€€€€€€€€€€€€ñÍ•±•Ð(€€€€€€€€€€€€€€€€€€€Ù…±Õ”õí•¹‘•Éô(€€€€€€€€€€€€€€€€€€€½¹¡…¹”õì¡•Ù•¹Ð¤€ôøÍ•Ñ•¹‘•È¡•Ù•¹Ð¹Ñ…É•Ð¹Ù…±Õ”¥ô(€€€€€€€€€€€€€€€€€€€É•ÅÕ¥É•(€€€€€€€€€€€€€€€€€€ø(€€€€€€€€€€€€€€€€€€€€ñ½ÁÑ¥½¸Ù…±Õ”ôˆˆù[…±…ÍÍëŠ˜ð½½ÁÑ¥½¸ø(€€€€€€€€€€€€€€€€€€€í9IL¹µ…À ¡¥Ñ•´¤€ôø€ (€€€€€€€€€€€€€€€€€€€€€€ñ½ÁÑ¥½¸­•äõí¥Ñ•µôùí¥Ñ•µôð½½ÁÑ¥½¸ø(€€€€€€€€€€€€€€€€€€€€¤¥ô(€€€€€€€€€€€€€€€€€€ð½Í•±•Ðø(€€€€€€€€€€€€€€€€ð½±…‰•°ø(€€€€€€€€€€€€€€€€ñ±…‰•°ø(€€€€€€€€€€€€€€€€€Q•±•Ãñ³¥ÍÓµÁÕÌ(€€€€€€€€€€€€€€€€€€ñÍ•±•Ð(€€€€€€€€€€€€€€€€€€€Ù…±Õ”õíÍ•ÑÑ±•µ•¹ÑQåÁ•ô(€€€€€€€€€€€€€€€€€€€½¹¡…¹”õì¡•Ù•¹Ð¤€ôøÍ•ÑM•ÑÑ±•µ•¹ÑQåÁ”¡•Ù•¹Ð¹Ñ…É•Ð¹Ù…±Õ”¥ô(€€€€€€€€€€€€€€€€€€€É•ÅÕ¥É•(€€€€€€€€€€€€€€€€€€ø(€€€€€€€€€€€€€€€€€€€€ñ½ÁÑ¥½¸Ù…±Õ”ôˆˆù[…±…ÍÍëŠ˜ð½½ÁÑ¥½¸ø(€€€€€€€€€€€€€€€€€€€íMQQ159Q}QeAL¹µ…À ¡¥Ñ•´¤€ôø€ (€€€€€€€€€€€€€€€€€€€€€€ñ½ÁÑ¥½¸­•äõí¥Ñ•µôùí¥Ñ•µôð½½ÁÑ¥½¸ø(€€€€€€€€€€€€€€€€€€€€¤¥ô(€€€€€€€€€€€€€€€€€€ð½Í•±•Ðø(€€€€€€€€€€€€€€€€ð½±…‰•°ø(€€€€€€€€€€€€€€€€ñ±…‰•°ø(€€€€€€€€€€€€€€€€€=ÉÍë…œ(€€€€€€€€€€€€€€€€€€ñ¥¹ÁÕÐ(€€€€€€€€€€€€€€€€€€€Ù…±Õ”õí½Õ¹ÑÉåô(€€€€€€€€€€€€€€€€€€€½¹¡…¹”õì¡•Ù•¹Ð¤€ôøÍ•Ñ½Õ¹ÑÉä¡•Ù•¹Ð¹Ñ…É•Ð¹Ù…±Õ”¥ô(€€€€€€€€€€€€€€€€€€€Á±…•¡½±‘•Èô‰C¥±“…Õ°è5…å…É½ÉÍë…œˆ(€€€€€€€€€€€€€€€€€€€µ¥¹1•¹Ñ õìÉô(€€€€€€€€€€€€€€€€€€€µ…á1•¹Ñ õìàÁô(€€€€€€€€€€€€€€€€€€€É•ÅÕ¥É•(€€€€€€€€€€€€€€€€€€¼ø(€€€€€€€€€€€€€€€€ð½±…‰•°ø(€€€€€€€€€€€€€€€€ñ±…‰•°ø(€€€€€€€€€€€€€€€€€ƒ%±•Ñ­½È(€€€€€€€€€€€€€€€€€€ñ¥¹ÁÕÐ(€€€€€€€€€€€€€€€€€€€ÑåÁ”ô‰¹Õµ‰•Èˆ(€€€€€€€€€€€€€€€€€€€Ù…±Õ”õí…•ô(€€€€€€€€€€€€€€€€€€€½¹¡…¹”õì¡•Ù•¹Ð¤€ôøÍ•Ñ”¡•Ù•¹Ð¹Ñ…É•Ð¹Ù…±Õ”¥ô(€€€€€€€€€€€€€€€€€€€µ¥¸õìÄáô(€€€€€€€€€€€€€€€€€€€µ…àõìÄÄÁô(€€€€€€€€€€€€€€€€€€€Á±…•¡½±‘•ÈôˆÄãŠLÄÄÀˆ(€€€€€€€€€€€€€€€€€€€É•ÅÕ¥É•(€€€€€€€€€€€€€€€€€€¼ø(€€€€€€€€€€€€€€€€ð½±…‰•°ø(€€€€€€€€€€€€€€ð½‘¥Øø(€€€€€€€€€€€€€€ñ±…‰•°±…ÍÍ9…µ”ô‰½¹Í•¹Ðµ¡•­‰½àˆø(€€€€€€€€€€€€€€€€ñ¥¹ÁÕÐ(€€€€€€€€€€€€€€€€€ÑåÁ”ô‰¡•­‰½àˆ(€€€€€€€€€€€€€€€€€¡•­•õíÍÁ•¥…±½¹Í•¹Ñô(€€€€€€€€€€€€€€€€€½¹¡…¹”õì¡•Ù•¹Ð¤€ôøÍ•ÑMÁ•¥…±½¹Í•¹Ð¡•Ù•¹Ð¹Ñ…É•Ð¹¡•­•¥ô(€€€€€€€€€€€€€€€€€É•ÅÕ¥É•(€€€€€€€€€€€€€€€€¼ø(€€€€€€€€€€€€€€€€ñÍÁ…¸ø(€€€€€€€€€€€€€€€€€-¥™•©•é•ÑÑ•¸¡½éë…«…ÉÕ±½¬°¡½ä„Á½±¥Ñ¥­…¤Û¥±•·¥¹åÉ”ÕÑ…³Ì(€€€€€€€€€€€€€€€€€¯¥É“GµÙÛ…±…Íé…¥µ…Ð­ÕÑ…Ó…Í¤¥±‹Í°­•é•±«¥¬¸(€€€€€€€€€€€€€€€€€€ñÍµ…±°ø(€€€€€€€€€€€€€€€€€€€¡½éë…«…ÉÕ³…ÌÙ¥ÍÍé…Ù½¹¡…ÓÌì„Ù¥ÍÍé…Ù½»…Ì¹•´ƒ¥É¥¹Ñ¤„(€€€€€€€€€€€€€€€€€€€­½Ë…‰‰¤­•é•³¥Ì©½Íé•ËÅÏ¥Ÿ¥Ð¸(€€€€€€€€€€€€€€€€€€ð½Íµ…±°ø(€€€€€€€€€€€€€€€€ð½ÍÁ…¸ø(€€€€€€€€€€€€€€ð½±…‰•°ø(€€€€€€€€€€€€€í•ÉÉ½È€ü€ñÀ±…ÍÍ9…µ”ô‰™½É´µ•ÉÉ½Èˆùí•ÉÉ½Éôð½Àø€è¹Õ±±ô(€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰½¹Í•¹Ðµ…Ñ¥½¹Ìˆø(€€€€€€€€€€€€€€€€ñ‰ÕÑÑ½¸(€€€€€€€€€€€€€€€€€ÑåÁ”ô‰ÍÕ‰µ¥Ðˆ(€€€€€€€€€€€€€€€€€±…ÍÍ9…µ”ô‰ÁÉ¥µ…Éäµ‰ÕÑÑ½¸ˆ(€€€€€€€€€€€€€€€€€‘¥Í…‰±•õí‰ÕÍåô(€€€€€€€€€€€€€€€€ø(€€€€€€€€€€€€€€€€€í‰ÕÍä€ü€‰	¥éÑ½¹Ï…½Ìµ•¹Ó¥ÏŠ˜ˆ€è€‰!½éë…«…ÉÕ±½¬„­ÕÑ…Ó…Í¡½è‰ô(€€€€€€€€€€€€€€€€ð½‰ÕÑÑ½¸ø(€€€€€€€€€€€€€€€€ñ‰ÕÑÑ½¸(€€€€€€€€€€€€€€€€€ÑåÁ”ô‰‰ÕÑÑ½¸ˆ(€€€€€€€€€€€€€€€€€±…ÍÍ9…µ”ô‰Í•½¹‘…Éäµ‰ÕÑÑ½¸ˆ(€€€€€€€€€€€€€€€€€‘¥Í…‰±•õí‰ÕÍåô(€€€€€€€€€€€€€€€€€½¹±¥¬õí‘•±¥¹•I•Í•…É¡ô(€€€€€€€€€€€€€€€€ø(€€€€€€€€€€€€€€€€€½±åÑ…Ñ½´­ÕÑ…Ó…Ì»¥±¯ñ°(€€€€€€€€€€€€€€€€ð½‰ÕÑÑ½¸ø(€€€€€€€€€€€€€€ð½‘¥Øø(€€€€€€€€€€€€ð½™½É´ø(€€€€€€€€€€ð½Í•Ñ¥½¸ø(€€€€€€€€ð½‘¥Øø(€€€€€€¤€è¹Õ±±ô((€€€€€í¹½Ñ¥•=Á•¸€ü€ (€€€€€€€€ñ9½Ñ¥•5½‘…°½¹±½Í”õì ¤€ôøÍ•Ñ9½Ñ¥•=Á•¸¡™…±Í”¥ô€¼ø(€€€€€€¤€è¹Õ±±ô((€€€€€íÁÉ¥Ù…å=Á•¸€ü€ (€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰µ½‘…°µ‰…­‘É½Àˆø(€€€€€€€€€€ñÍ•Ñ¥½¸(€€€€€€€€€€€±…ÍÍ9…µ”ô‰Í¡••Ðµµ½‘…°ÁÉ¥Ù…äµµ½‘…°ˆ(€€€€€€€€€€€É½±”ô‰‘¥…±½œˆ(€€€€€€€€€€€…É¥„µµ½‘…°ô‰ÑÉÕ”ˆ(€€€€€€€€€€€…É¥„µ±…‰•±±•‘‰äô‰ÁÉ¥Ù…äµÑ¥Ñ±”ˆ(€€€€€€€€€€ø(€€€€€€€€€€€€ñ‰ÕÑÑ½¸(€€€€€€€€€€€€€±…ÍÍ9…µ”ô‰±½Í”µ‰ÕÑÑ½¸ˆ(€€€€€€€€€€€€€…É¥„µ±…‰•°ô‰	•ë…Ë…Ìˆ(€€€€€€€€€€€€€½¹±¥¬õì ¤€ôøÍ•ÑAÉ¥Ù…å=Á•¸¡™…±Í”¥ô(€€€€€€€€€€€€ø(€€€€€€€€€€€€€ƒ\(€€€€€€€€€€€€ð½‰ÕÑÑ½¸ø(€€€€€€€€€€€€ñÀ±…ÍÍ9…µ”ô‰•å•‰É½ÜˆûY¹­¥Íé½±Ÿ…³Ì…‘…ÑÛ¥‘•±•´ð½Àø(€€€€€€€€€€€€ñ È¥ô‰ÁÉ¥Ù…äµÑ¥Ñ±”ˆùÍ…«…ÐË¥ÍéÛ¥Ñ•±¤…‘…Ñ…¥ð½ Èø(€€€€€€€€€€€€ñÀø(€€€€€€€€€€€€€‹Ù¹Ÿ¥ÍëE‘‰•¸ƒEÉëÙÑÐÛ¥±•Ñ±•¸­Õ±Í…°ÑÕ‘©Õ¬µ•Ñ…³…±¹¤„(€€€€€€€€€€€€€É•­½É‘½‘…Ð¸éÐ„­Õ±Í½Ð„Íé•ÉÙ•ÈÍ…¬±•¹å½µ…Ñ¯¥¹Ð­…Á©„µ•œ¸(€€€€€€€€€€€€ð½Àø(€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰ÁÉ¥Ù…äµ…Ñ¥½¹Ìˆø(€€€€€€€€€€€€€€ñ‰ÕÑÑ½¸(€€€€€€€€€€€€€€€±…ÍÍ9…µ”ô‰Í•½¹‘…Éäµ‰ÕÑÑ½¸ˆ(€€€€€€€€€€€€€€€‘¥Í…‰±•õí‰ÕÍåô(€€€€€€€€€€€€€€€½¹±¥¬õí•áÁ½ÉÑ…Ñ…ô(€€€€€€€€€€€€€€ø(€€€€€€€€€€€€€€€M…«…Ð…‘…Ñ½¬±•ÓÙ±Ó¥Í”(€€€€€€€€€€€€€€ð½‰ÕÑÑ½¸ø(€€€€€€€€€€€€€€ñ‰ÕÑÑ½¸(€€€€€€€€€€€€€€€±…ÍÍ9…µ”ô‰‘…¹•Èµ‰ÕÑÑ½¸ˆ(€€€€€€€€€€€€€€€‘¥Í…‰±•õí‰ÕÍåô(€€€€€€€€€€€€€€€½¹±¥¬õí‘•±•Ñ•…Ñ…ô(€€€€€€€€€€€€€€ø(€€€€€€€€€€€€€€€M…«…Ð…‘…Ñ½¬Û¥±••ÌÓÙÉ³¥Í”(€€€€€€€€€€€€€€ð½‰ÕÑÑ½¸ø(€€€€€€€€€€€€ð½‘¥Øø(€€€€€€€€€€€í•ÉÉ½È€ü€ñÀ±…ÍÍ9…µ”ô‰™½É´µ•ÉÉ½Èˆùí•ÉÉ½Éôð½Àø€è¹Õ±±ô(€€€€€€€€€€€€ñÍµ…±°ø(€€€€€€€€€€€€€!„„¡•±å¤‹Ù¹Ÿ¥ÍëE…‘…Ñ½­…ÐÓÙÉ³Ù„­Õ±Ì»¥±¯ñ°°„É•­½É¹•´(€€€€€€€€€€€€€±•ÍèƒÙÍÍé•­…ÁÍ½±¡…ÓÌÙ•±•¸%±å•¸•Í•Ñ‰•¸„¥Ñ!ÕˆµÁÉ½™¥±½¸©•±é•ÑÐ(€€€€€€€€€€€€€­…ÁÍ½±…Ñ¤Í…Ñ½É»…¸¯¥É¡•ÑÍèÍ•ŸµÑÏ¥•Ð¸(€€€€€€€€€€€€ð½Íµ…±°ø(€€€€€€€€€€ð½Í•Ñ¥½¸ø(€€€€€€€€ð½‘¥Øø(€€€€€€¤€è¹Õ±±ô(€€€€ð½µ…¥¸ø(€€¤ì)ô()™Õ¹Ñ¥½¸½Ý¹¥µ•¹Í¥½¹Y…±Õ” (€‘¥µ•¹Í¥½¸è¥µ•¹Í¥½¸°(€‘•µ½É…Á¡¥Ìüè•µ½É…Á¡¥Ì°(¤ì(€¥˜€ …‘•µ½É…Á¡¥Ì¤É•ÑÕÉ¸€ˆˆì(€¥˜€¡‘¥µ•¹Í¥½¸€ôôô€‰…”ˆ¤É•ÑÕÉ¸…•	…¹¡‘•µ½É…Á¡¥Ì¹…”¤ì(€¥˜€¡‘¥µ•¹Í¥½¸€ôôô€‰½Õ¹ÑÉäˆ¤É•ÑÕÉ¸‘•µ½É…Á¡¥Ì¹½Õ¹ÑÉäì(€¥˜€¡‘¥µ•¹Í¥½¸€ôôô€‰Í•ÑÑ±•µ•¹Ðˆ¤É•ÑÕÉ¸‘•µ½É…Á¡¥Ì¹Í•ÑÑ±•µ•¹ÑQåÁ”ì(€É•ÑÕÉ¸‘•µ½É…Á¡¥Ì¹•¹‘•Èì)ô()™Õ¹Ñ¥½¸9½Ñ¥•5½‘…°¡ì½¹±½Í”ôèì½¹±½Í”è€ ¤€ôøÙ½¥ô¤ì(€É•ÑÕÉ¸€ (€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰µ½‘…°µ‰…­‘É½Àˆø(€€€€€€ñÍ•Ñ¥½¸(€€€€€€€±…ÍÍ9…µ”ô‰Í¡••Ðµµ½‘…°¹½Ñ¥”µµ½‘…°ˆ(€€€€€€€É½±”ô‰‘¥…±½œˆ(€€€€€€€…É¥„µµ½‘…°ô‰ÑÉÕ”ˆ(€€€€€€€…É¥„µ±…‰•±±•‘‰äô‰¹½Ñ¥”µÑ¥Ñ±”ˆ(€€€€€€ø(€€€€€€€€ñ‰ÕÑÑ½¸±…ÍÍ9…µ”ô‰±½Í”µ‰ÕÑÑ½¸ˆ…É¥„µ±…‰•°ô‰	•ë…Ë…Ìˆ½¹±¥¬õí½¹±½Í•ôø(€€€€€€€€€ƒ\(€€€€€€€€ð½‰ÕÑÑ½¸ø(€€€€€€€€ñÀ±…ÍÍ9…µ”ô‰•å•‰É½ÜˆùY•Éé§Ìèí9=Q%}YIM%=9ôð½Àø(€€€€€€€€ñ È¥ô‰¹½Ñ¥”µÑ¥Ñ±”ˆù‘…Ñ­•é•³¥Í¤ƒ¥Ì­ÕÑ…Ó…Í¤Ó…«¥­½éÑ…ÓÌð½ Èø(€€€€€€€€ñÀ±…ÍÍ9…µ”ô‰¹½Ñ¥”µ±•…ˆø(€€€€€€€€€è„Ó…«¥­½éÑ…ÓÌ¯Ùë¥ÉÑ¡•ÓE•¸ƒ¥ÌÑ•±©•ÌÑ•É©•‘•±•µ‰•¸±—µÉ©„„(€€€€€€€€€5¥¹‘¥Ù¥±¥Ì­ÕÑ…Ó…Í¤ÁÉ½Ñ½ÓµÁÕÌ…‘…Ñ­•é•³¥Ï¥Ð¸UÑ½±ÏÌ™É¥ÍÏµÓ¥Ìè(€€€€€€€€€€ÈÀÈØ¸«é±¥ÕÌ€Èà¸(€€€€€€€€ð½Àø((€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰¹½Ñ¥”µ½¹Ñ•¹Ðˆø(€€€€€€€€€€ñÍ•Ñ¥½¸ø(€€€€€€€€€€€€ñ ÌøÄ¸‘…Ñ­•é•³Dƒ¥Ì­…ÁÍ½±…Ðð½ Ìø(€€€€€€€€€€€€ñÀø(€€€€€€€€€€€€€‘…Ñ­•é•³Dè€ñÍÑÉ½¹œù+ÍéÍ•˜)…¹Íé­äð½ÍÑÉ½¹œø°„›ñ•Ñ±•¸(€€€€€€€€€€€€€5¥¹‘¥Ù¥±¥Ì­ÕÑ…Ó…Í¤ÁÉ½©•­Ð·Å¯Ù‘Ñ•ÓE©”¸-…ÁÍ½±…Ðƒ¥Ì…é½¹½ÏµÑ¡…ÓÌ(€€€€€€€€€€€€€¹å¥±Û…¹½ÌÁÉ½™¥°éìˆ€‰ô(€€€€€€€€€€€€€€ñ„(€€€€€€€€€€€€€€€¡É•˜ô‰¡ÑÑÁÌè¼½¥Ñ¡Õˆ¹½´½©…¹Íé­å©½éÍ•˜ˆ(€€€€€€€€€€€€€€€Ñ…É•Ðô‰}‰±…¹¬ˆ(€€€€€€€€€€€€€€€É•°ô‰¹½É•™•ÉÉ•Èˆ(€€€€€€€€€€€€€€ø(€€€€€€€€€€€€€€€¥Ñ¡Õˆ¹½´½©…¹Íé­å©½éÍ•˜(€€€€€€€€€€€€€€ð½„ø(€€€€€€€€€€€€€€¸Í…«…ÐÉ•­½É•áÁ½ÉÑ©„ƒ¥ÌÓÙÉ³¥Í”…è…±­…±µ…ë…Í‰…¸¯ÙéÙ•Ñ±•»ñ°(€€€€€€€€€€€€€•±Û¥•é¡•ÓD¸(€€€€€€€€€€€€ð½Àø(€€€€€€€€€€ð½Í•Ñ¥½¸ø(€€€€€€€€€€ñÍ•Ñ¥½¸ø(€€€€€€€€€€€€ñ ÌøÈ¸­ÕÑ…Ó…Ì¥±©„ð½ Ìø(€€€€€€€€€€€€ñÀø(€€€€€€€€€€€€€¥°Ó…ÉÍ…‘…±µ¤°…é‘…Ï…¤ƒ¥Ì¹å¥Ñ½ÑÑÏ…¤»¥é•Ñµ¥¹Ó…é…Ñ½¬(€€€€€€€€€€€€€™•±Ó…Ë…Í„°Ù…±…µ¥¹Ð±•…³…‰ˆÓµé›EÌÍ½Á½ÉÑ½¬ƒÙÍÍé•ÏµÑ•ÑÐ(€€€€€€€€€€€€€ƒÙÍÍé•¡…Í½¹³µÓ…Í„­½É½ÍéÓ…±ä°½ÉÍë…œ°Ñ•±•Ãñ³¥ÍÓµÁÕÌƒ¥Ì¹•´Íé•É¥¹Ð¸(€€€€€€€€€€€€€è•É•‘·¥¹ä¹•´µ¥»EÏµÓ¥Ì°ÁÉ½™¥±…±­½Ó…Í¤“Ù¹Ó¥ÌÙ…äÁ½±¥Ñ¥­…¤(€€€€€€€€€€€€€‘¥…»Íé¥Ì¸(€€€€€€€€€€€€ð½Àø(€€€€€€€€€€ð½Í•Ñ¥½¸ø(€€€€€€€€€€ñÍ•Ñ¥½¸ø(€€€€€€€€€€€€ñ ÌøÌ¸-•é•±Ð…‘…Ñ½¬ð½ Ìø(€€€€€€€€€€€€ñÀø(€€€€€€€€€€€€€!½éë…«…ÉÕ³…Ì•Í•Ó¥¸è¹•´°Ñ•±•Ãñ³¥ÍÓµÁÕÌ°½ÉÍë…œ°ƒ¥±•Ñ­½Èƒ¥Ì(€€€€€€€€€€€€€Íë…Éµ…éÑ…Ñ½ÑÐ­½ÉÍ½Á½ÉÐì„€ÄÈ¯¥É“GµÙÛ…±…Íèì£…É½´Íë…·µÑ½ÑÐ(€€€€€€€€€€€€€Ñ•¹•±ç¥ÉÓ¥¬ì„¡½éë…«…ÉÕ³…Ìƒ¥Ì­¥ÓÙ±Ó¥Ì¥“EÁ½¹Ñ©„ì„Ó…«¥­½éÑ…ÓÌ(€€€€€€€€€€€€€Ù•Éé§Í©„ìÙ…±…µ¥¹Ð•äÛ¥±•Ñ±•¸¡•±å¤Ë¥ÍéÛ¥Ñ•±¤­Õ±Ì(€€€€€€€€€€€€€Ù¥ÍÍé…™½É“µÑ¡…Ñ…Ñ±…¸±•¹å½µ…Ñ„¸;¥Ø°”µµ…¥°°Ñ•±•™½¹Íë…´Ù…ä(€€€€€€€€€€€€€¡¥É‘•Ó¥Í¤…é½¹½ÏµÓÌ¹•´­•Ëñ°…è…±­…±µ…ë…Ì…‘…Ñ‹…é¥Ï…‰„¸(€€€€€€€€€€€€ð½Àø(€€€€€€€€€€€€ñÀø(€€€€€€€€€€€€€±ÕÑ…ÏµÓ…Ì•Í•Ó¥¸­¥ë…ËÍ±…œ„Ë¥ÍéÛ¥Ñ•±¤­Õ±Ì±•¹å½µ…Ñ„°…è(€€€€€€€€€€€€€•±ÕÑ…ÏµÓ…Ì¥“EÁ½¹Ñ©„ƒ¥Ì„Ó…«¥­½éÑ…ÓÌÙ•Éé§Í©„­•Ëñ°¯ñ³Ù¸°(€€€€€€€€€€€€€ÁÉ¥Û…ÐÓ…‰³…‰„¸•µ½Ë…™¥…¤Ù…ä¥‘•½³Í¥…¤…‘…Ð¥±å•¹­½È¹•´(€€€€€€€€€€€€€µ•¹ÓE‘¥¬¸(€€€€€€€€€€€€ð½Àø(€€€€€€€€€€ð½Í•Ñ¥½¸ø(€€€€€€€€€€ñÍ•Ñ¥½¸ø(€€€€€€€€€€€€ñ ÌøÐ¸)½…±…Àƒ¥Ì¯ñ³Ù¹±••Ì…‘…Ðð½ Ìø(€€€€€€€€€€€€ñÀø(€€€€€€€€€€€€€èƒ…±Ñ…³…¹½Ì…‘…Ñ­•é•³¥Ì©½…±…Á©„…èƒÙ¹¯¥¹Ñ•Ì¡½éë…«…ÉÕ³…Ì(€€€€€€€€€€€€€€¡AH€Ø¸¥­¬€ Ä¤„¤¤¸Á½±¥Ñ¥­…¤Û¥±•·¥¹åÉ”ÕÑ…³ÌÛ…±…Íé½¬(€€€€€€€€€€€€€¯ñ³Ù¹±••ÌÍé•·¥±å•Ì…‘…Ñ¹…¬µ¥»EÏñ±¡•Ñ¹•¬ì­•é•³¥Ïñ¬…±…Á©„„(€€€€€€€€€€€€€¯ñ³Ù¸°­¥™•©•é•ÑÐ¡½éë…«…ÉÕ³…Ì€¡AH€ä¸¥­¬€ È¤„¤¤¸(€€€€€€€€€€€€€¡½éë…«…ÉÕ³…Ìµ•Ñ……“…Í„¹•´«…È£…ÑË…¹¹å…°°ƒ¥Ì‹…Éµ¥­½È(€€€€€€€€€€€€€Ù¥ÍÍé…Ù½¹¡…ÓÌ¸(€€€€€€€€€€€€ð½Àø(€€€€€€€€€€ð½Í•Ñ¥½¸ø(€€€€€€€€€€ñÍ•Ñ¥½¸ø(€€€€€€€€€€€€ñ ÌøÔ¸S…É½³…Ì°¡½éë…›¥Ë¥Ìƒ¥Ìµµé•ÑÑ•¬ð½ Ìø(€€€€€€€€€€€€ñÀø(€€€€€€€€€€€€€è…‘…Ñ½¬¹•´¹å¥±Û…¹½Ì°¡½éë…›¥Ë¥ÌµÛ¥‘•ÑÐ±½Õ‘™±…É”Ä(€€€€€€€€€€€€€…‘…Ñ‹…é¥Í‰…¸µ…É…‘¹…¬¸¹å¥±Û…¹½Ì™•³ñ±•Ñ•¸Í…¬±•…³…‰‰ìˆ€‰ô(€€€€€€€€€€€€€í5%9}=!=IQ}M%iô›EÌÍ½Á½ÉÑ½¬Íë…µ„ƒ¥Ìƒ…Ñ±…„©•±•¹¡•Ðµ•œ¸(€€€€€€€€€€€€€ç¥¹¤Û…±…ÍèÙ…äÉ•­½É¹•´­•Ëñ°¹å¥±Û…¹½ÍÏ…É„¸è…±­…±µ…ë…Ì(€€€€€€€€€€€€€Í…«…Ð…‘…Ñ‹…é¥Í„¹•´ËÙëµÐ%@µµµ•ÐÙ…ä‹Ù¹Ÿ¥ÍëE…é½¹½ÏµÓÍÐì„(€€€€€€€€€€€€€Ó…É¡•±ä´ƒ¥Ì£…³Íé…Ñ¤Íé½±Ÿ…±Ñ…ÓÍ¬‰¥éÑ½¹Ï…¤¹…Á³Í¤•ÑÓE°(€€€€€€€€€€€€€›ñ•Ñ±•»ñ°°Í…«…ÐÍé…‹…±å…¥¬Íé•É¥¹Ð­•±•Ñ­•é¡•Ñ¹•¬¸(€€€€€€€€€€€€ð½Àø(€€€€€€€€€€€€ñÀø(€€€€€€€€€€€€€Q•¡¹¥­…¤Íé½±Ÿ…±Ñ…ÓÍ¯¥¹Ð„Ý•‰¡•±å•Ð‰¥éÑ½ÏµÓÌ=Á•¹$M¥Ñ•Ìƒ¥Ì(€€€€€€€€€€€€€…¹¹…¬±½Õ‘™±…É”µ¥¹™É…ÍÑÉÕ­ÓéË…©„›¥É¡•Ð¡½éë„…è…‘…Ñ½­¡½è„(€€€€€€€€€€€€€Íé½±Ÿ…±Ñ…Ó…Ì·Å¯Ù‘Ñ•Ó¥Ï¥¡•èƒ¥ÌÛ¥‘•±·¥¡•è¸(€€€€€€€€€€€€ð½Àø(€€€€€€€€€€ð½Í•Ñ¥½¸ø(€€€€€€€€€€ñÍ•Ñ¥½¸ø(€€€€€€€€€€€€ñ ÌøØ¸5•ŸEÉë¥Í¤¥“Dð½ Ìø(€€€€€€€€€€€€ñÀø(€€€€€€€€€€€€€­ÕÑ…Ó…Í¤É•­½É‘½­…Ð±•™•±©•‰ˆ€ÈÐ£Í¹…Á¥œ°¥±±•ÑÙ”„(€€€€€€€€€€€€€¡½éë…«…ÉÕ³…ÌÙ¥ÍÍé…Ù½»…Ï…¥œ­•é•±«ñ¬¸ÓÙÉ³¥Ì…è…±­…±µ…ë…Í‹Í°(€€€€€€€€€€€€€…é½¹¹…°­•é‘•·¥¹å•é¡•ÓD¸·…È©½Íé•ËÅ•¸³¥ÑÉ•¡½é½ÑÐ°­¥ë…ËÍ±…œ(€€€€€€€€€€€€€ƒÙÍÍé•ÏµÑ•ÑÐƒ¥ÌÍé•·¥±å¡•èÓÙ‰‹¤¹•´­…ÁÍ½±¡…ÓÌÍÑ…Ñ¥ÍéÑ¥­„¹•´(€€€€€€€€€€€€€™•±Ó¥Ñ±•»ñ°ƒ…±³µÑ¡…ÓÌÙ¥ÍÍé„•ç¥¹¤É•­½É‘É„¸(€€€€€€€€€€€€ð½Àø(€€€€€€€€€€ð½Í•Ñ¥½¸ø(€€€€€€€€€€ñÍ•Ñ¥½¸ø(€€€€€€€€€€€€ñ ÌøÜ¸èƒ¥É¥¹Ñ•ÑÐ©½…¤ð½ Ìø(€€€€€€€€€€€€ñÀø(€€€€€€€€€€€€€/¥É¡•ÓD¡½éë…›¥Ë¥Ì°¡•±å•Í‹µÓ¥Ì°ÓÙÉ³¥Ì°­½É³…Ñ½ë…Ì°(€€€€€€€€€€€€€…‘…Ñ¡½É‘½é¡…ÓÍÏ…œ°Ù…±…µ¥¹Ð„¡½éë…«…ÉÕ³…ÌÙ¥ÍÍé…Ù½»…Í„¸¡•±å¤(€€€€€€€€€€€€€­Õ±Í…°…è•áÁ½ÉÐƒ¥Ì„ÓÙÉ³¥ÌƒÙ¹­¥Íé½±Ÿ…³Í…¸•³¥É¡•ÓD¸A…¹…Íè„(€€€€€€€€€€€€€9•µé•Ñ¤‘…ÑÛ¥‘•±µ¤ƒ¥Ì%¹™½É·…§ÍÍé…‰…‘Ï…œ!…ÓÍÏ…»…°€¡9% ¤Ù…ä(€€€€€€€€€€€€€…è¥±±•Ó¥­•Ì‹µËÍÏ…»…°¹çé©Ñ¡…ÓÌ‰”¸(€€€€€€€€€€€€ð½Àø(€€€€€€€€€€ð½Í•Ñ¥½¸ø(€€€€€€€€€€ñÍ•Ñ¥½¸ø(€€€€€€€€€€€€ñ Ìøà¸	¥éÑ½¹Ï…œƒ¥Ì…ÕÑ½µ…Ñ¥ë…±Ð“Ù¹Ó¥Ìð½ Ìø(€€€€€€€€€€€€ñÀø(€€€€€€€€€€€€€ƒ±¹•Ù•ÏµÑ•ÑÐ…é½¹½ÏµÓ…ÍÐ°•±¯ñ³Ù»µÑ•ÑÐ•±ÕÑ…ÏµÓ…Í¤É•­½É‘½­…Ð°(€€€€€€€€€€€€€Ñ¥Ñ­½ÏµÑ½ÑÐ£…³Íé…Ñ¤­…ÁÍ½±…Ñ½Ðƒ¥Ìµ¥¹¥µÕµ³¥ÑÍë…·è…É•Ÿ…³…ÍÐ(€€€€€€€€€€€€€…±­…±µ…éÕ¹¬¸Á½¹ÑÍë…´…ÕÑ½µ…Ñ¥­ÕÌµ…Ñ•µ…Ñ¥­…¤ƒÙÍÍé•ÏµÓ¥Ì°‘”¹•´(€€€€€€€€€€€€€«…È©½¤Ù…ä¡…Í½¹³Í…¸©•±•¹ÓEÌ¡…Ó…ÍÍ…°°ƒ¥Ì¹•´¡…Íé»…±©Õ¬(€€€€€€€€€€€€€Íé•·¥±åÉ”Íé…‰½ÑÐÁ½±¥Ñ¥­…¤‰•™½±ç…Í½³…ÍÉ„¸(€€€€€€€€€€€€ð½Àø(€€€€€€€€€€ð½Í•Ñ¥½¸ø(€€€€€€€€€€ñÍ•Ñ¥½¸ø(€€€€€€€€€€€€ñ Ìøä¸-ÕÑ…Ó…Í¤­½É³…Ñ½¬ð½ Ìø(€€€€€€€€€€€€ñÀø(€€€€€€€€€€€€€µ¥¹Ñ„ƒÙ¹¯¥¹Ñ•Ì°•ë¥ÉÐ¹•´É•ÁÉ•é•¹Ñ…ÓµØ¸è½ÉÍë…½¬ƒ¥Ì(€€€€€€€€€€€€€Í½Á½ÉÑ½¬¯ÙëÙÑÑ¤•±Ó¥Ë¥Ì¹•´©•±•¹Ð½¬µ½­½é…Ñ¤­…ÁÍ½±…Ñ½Ð¸è(€€€€€€€€€€€€€…±…Í½¹ä•±•µÍë…·èÍ½Á½ÉÑ½­…Ð„É•¹‘Íé•È•±É•©Ñ¤ì¡…µ¥ÌÙ…ä(€€€€€€€€€€€€€Íé¥¹Ñ•Ñ¥­ÕÌÍ½Á½ÉÑ…‘…Ñ½­…Ð¹•´©•±•»µÐµ•œ¸(€€€€€€€€€€€€ð½Àø(€€€€€€€€€€ð½Í•Ñ¥½¸ø(€€€€€€€€ð½‘¥Øø(€€€€€€€€ñ‰ÕÑÑ½¸±…ÍÍ9…µ”ô‰ÁÉ¥µ…Éäµ‰ÕÑÑ½¸ˆ½¹±¥¬õí½¹±½Í•ôø(€€€€€€€€€ƒ%ÉÑ•´°‰•ë…É½´(€€€€€€€€ð½‰ÕÑÑ½¸ø(€€€€€€ð½Í•Ñ¥½¸ø(€€€€ð½‘¥Øø(€€¤ì)ô(
+          {stored?.scores ? <a href="#terkep">Az Ã©n tÃ©rkÃ©pem</a> : null}
+          <button onClick={() => setNoticeOpen(true)}>TÃ¡jÃ©koztatÃ³</button>
+          <button onClick={() => setPrivacyOpen(true)}>AdatvÃ©delem</button>
+        </nav>
+        <span className="adult-mark">18+</span>
+      </header>
+
+      {stored?.decision === "declined" ? (
+        <section className="declined-view">
+          <div className="declined-copy">
+            <p className="eyebrow">A dÃ¶ntÃ©sedet tiszteletben tartjuk</p>
+            <h1>A MindCivilis kutatÃ¡s nÃ©lkÃ¼l is nyitva marad.</h1>
+            <p>
+              Nem kÃ©rÃ¼nk demogrÃ¡fiai vagy ideolÃ³giai adatot, Ã©s nem mutatunk
+              szemÃ©lyes ideolÃ³giai tÃ©rkÃ©pet. A dÃ¶ntÃ©srÅ‘l kizÃ¡rÃ³lag egy vÃ©letlen,
+              Ã¡lnevesÃ­tett technikai azonosÃ­tÃ³t Ã©s a tÃ¡jÃ©koztatÃ³ verziÃ³jÃ¡t
+              tÃ¡roljuk privÃ¡t adatbÃ¡zisban.
+            </p>
+            <div className="button-row">
+              <button
+                className="primary-button"
+                onClick={() => setConsentOpen(true)}
+              >
+                MÃ©gis rÃ©szt veszek
+              </button>
+              <button
+                className="text-button"
+                onClick={() => setNoticeOpen(true)}
+              >
+                Mit tÃ¡rolunk?
+              </button>
+            </div>
+          </div>
+          <div className="declined-visual" aria-hidden="true">
+            <span className="ghost-axis horizontal" />
+            <span className="ghost-axis vertical" />
+            <strong>A tÃ©rkÃ©phez Ã¶nkÃ©ntes hozzÃ¡jÃ¡rulÃ¡s kell</strong>
+          </div>
+        </section>
+      ) : stored?.decision === "consented" && !stored.scores ? (
+        <section className="questionnaire-view">
+          <div className="questionnaire-head">
+            <div>
+              <p className="eyebrow">12 rÃ¶vid Ã¡llÃ­tÃ¡s</p>
+              <h1>Hol helyezkednek el a nÃ©zeteid?</h1>
+              <p>
+                Nincs jÃ³ vagy rossz vÃ¡lasz. Azt jelÃ¶ld, ami most a legkÃ¶zelebb
+                Ã¡ll hozzÃ¡d.
+              </p>
+            </div>
+            <span className="progress-count">
+              {Math.min(questionIndex + 1, QUESTIONS.length)} / {QUESTIONS.length}
+            </span>
+          </div>
+          <div className="progress-track">
+            <span
+              style={{
+                width: `${((questionIndex + (answers[questionIndex] ? 1 : 0)) / QUESTIONS.length) * 100}%`,
+              }}
+            />
+          </div>
+          <article className="question-card">
+            <span className="question-number">
+              {String(questionIndex + 1).padStart(2, "0")}
+            </span>
+            <h2>{QUESTIONS[questionIndex].text}</h2>
+            <div className="likert-labels">
+              <span>EgyÃ¡ltalÃ¡n nem Ã©rtek egyet</span>
+              <span>Teljesen egyetÃ©rtek</span>
+            </div>
+            <div className="likert-buttons">
+              {[1, 2, 3, 4, 5].map((value) => (
+                <button
+                  key={value}
+                  aria-label={`${value} az 5-bÅ‘l`}
+                  className={answers[questionIndex] === value ? "selected" : ""}
+                  onClick={() => answerQuestion(value)}
+                >
+                  {value}
+                </button>
+              ))}
+            </div>
+          </article>
+          <div className="question-actions">
+            <button
+              className="text-button"
+              disabled={questionIndex === 0}
+              onClick={() => setQuestionIndex(questionIndex - 1)}
+            >
+              â† ElÅ‘zÅ‘
+            </button>
+            {questionnaireComplete ? (
+              <button
+                className="primary-button"
+                disabled={busy}
+                onClick={finishQuestionnaire}
+              >
+                {busy ? "PrivÃ¡t mentÃ©sâ€¦" : "EredmÃ©ny megjelenÃ­tÃ©se"}
+              </button>
+            ) : (
+              <button
+                className="secondary-button"
+                disabled={!answers[questionIndex]}
+                onClick={() =>
+                  setQuestionIndex(
+                    Math.min(questionIndex + 1, QUESTIONS.length - 1),
+                  )
+                }
+              >
+                KÃ¶vetkezÅ‘ â†’
+              </button>
+            )}
+          </div>
+          {error ? <p className="form-error">{error}</p> : null}
+        </section>
+      ) : stored?.scores ? (
+        <section className="dashboard" id="terkep">
+          <IdeologyMap scores={stored.scores} cohort={cohort} />
+          <aside className="result-sidebar">
+            <section className="result-card">
+              <div className="card-heading">
+                <div>
+                  <p className="eyebrow">SajÃ¡t eredmÃ©ny</p>
+                  <h2>HÃ¡rom nÃ©zeti tengely</h2>
+                </div>
+                <span className="saved-mark">PrivÃ¡tan mentve</span>
+              </div>
+              <ScoreBar
+                label="GazdasÃ¡gi nÃ©zet"
+                left="SzolidaritÃ¡s"
+                right="Piaci Ã¶nÃ¡llÃ³sÃ¡g"
+                value={stored.scores.economic}
+              />
+              <ScoreBar
+                label="TÃ¡rsadalmi nÃ©zet"
+                left="AutonÃ³mia"
+                right="KÃ¶zÃ¶ssÃ©gi rend"
+                value={stored.scores.social}
+              />
+              <ScoreBar
+                label="NyitottsÃ¡g"
+                left="NemzetkÃ¶zi"
+                right="SzuverenitÃ¡s"
+                value={stored.scores.openness}
+              />
+            </section>
+            <section className="compare-card">
+              <p className="eyebrow">Ã–sszehasonlÃ­tÃ¡s</p>
+              <h2>ValÃ³di csoportÃ¡tlagok</h2>
+              <p>
+                KizÃ¡rÃ³lag legalÃ¡bb {MIN_COHORT_SIZE} befejezett rÃ©szvÃ©telbÅ‘l
+                szÃ¡molt Ã¡tlagot mutatunk.
+              </p>
+              <label>
+                NÃ©zÅ‘pont
+                <select
+                  value={dimension}
+                  onChange={(event) =>
+                    setDimension(event.target.value as Dimension)
+                  }
+                >
+                  <option value="age">KorosztÃ¡ly</option>
+                  <option value="country">OrszÃ¡g</option>
+                  <option value="settlement">TelepÃ¼lÃ©stÃ­pus</option>
+                  <option value="gender">Nem</option>
+                </select>
+              </label>
+              {cohorts.length ? (
+                <label>
+                  Csoport
+                  <select
+                    value={selectedCohort}
+                    onChange={(event) => setSelectedCohort(event.target.value)}
+                  >
+                    {cohorts.map((item) => (
+                      <option key={item.label} value={item.label}>
+                        {item.label} Â· n={item.count}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+              ) : (
+                <div className="empty-cohort">
+                  <strong>
+                    {cohortLoading
+                      ? "Csoportok frissÃ­tÃ©seâ€¦"
+                      : "MÃ©g nincs elegendÅ‘ adat"}
+                  </strong>
+                  <span>
+                    EnnÃ©l a bontÃ¡snÃ¡l egyik csoport sem Ã©rte el a 10 fÅ‘t.
+                  </span>
+                </div>
+              )}
+            </section>
+            <div className="privacy-note">
+              <span className="shield-icon" aria-hidden="true">
+                âœ“
+              </span>
+              <div>
+                <strong>Az adataid vÃ©delme</strong>
+                <p>
+                  VÃ©letlen helyi kulccsal, nÃ©v Ã©s e-mail nÃ©lkÃ¼l tÃ¡rolunk.
+                </p>
+                <button onClick={() => setPrivacyOpen(true)}>
+                  SajÃ¡t adatok kezelÃ©se
+                </button>
+              </div>
+            </div>
+          </aside>
+        </section>
+      ) : (
+        <section className="hero">
+          <p>Az alkalmazÃ¡s elÅ‘kÃ©szÃ­tÃ©seâ€¦</p>
+        </section>
+      )}
+
+      <footer>
+        <span>MindCivilis Â· fÃ¼ggetlen kutatÃ¡si prototÃ­pus Â· 2026</span>
+        <div>
+          <button onClick={() => setNoticeOpen(true)}>AdatkezelÃ©s</button>
+          <a
+            href="https://github.com/janszkyjozsef"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Kapcsolat
+          </a>
+        </div>
+      </footer>
+
+      {consentOpen ? (
+        <div className="modal-backdrop">
+          <section
+            className="consent-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="consent-title"
+          >
+            <div className="consent-copy">
+              <div>
+                <span className="consent-kicker">Ã–nkÃ©ntes kutatÃ¡s Â· 18+</span>
+                <h1 id="consent-title">MielÅ‘tt elkezdjÃ¼k</h1>
+                <p>
+                  A MindCivilis azt vizsgÃ¡lja, hogyan rendezÅ‘dnek egymÃ¡shoz
+                  tÃ¡rsadalmi nÃ©zetek. A rÃ©szvÃ©tel Ã¶nkÃ©ntes. Ha nemet mondasz,
+                  nem kÃ©rÃ¼nk demogrÃ¡fiai vagy ideolÃ³giai vÃ¡laszt.
+                </p>
+                <ul>
+                  <li>Nincs nÃ©v, e-mail vagy hirdetÃ©si profil.</li>
+                  <li>A visszautasÃ­tÃ¡st is csak Ã¡lnevesÃ­tett kulccsal mentjÃ¼k.</li>
+                  <li>BÃ¡rmikor exportÃ¡lhatod vagy tÃ¶rÃ¶lheted a sajÃ¡t adataidat.</li>
+                </ul>
+              </div>
+              <button
+                className="notice-link"
+                onClick={() => setNoticeOpen(true)}
+              >
+                RÃ©szletes adatkezelÃ©si tÃ¡jÃ©koztatÃ³ â†—
+              </button>
+            </div>
+            <form className="consent-form" onSubmit={consentResearch}>
+              <div className="form-heading">
+                <p className="eyebrow">Ha rÃ©szt veszel</p>
+                <h2>NÃ©gy alapadatot kÃ©rÃ¼nk</h2>
+              </div>
+              <div className="field-grid">
+                <label>
+                  Nem
+                  <select
+                    value={gender}
+                    onChange={(event) => setGender(event.target.value)}
+                    required
+                  >
+                    <option value="">VÃ¡lasszâ€¦</option>
+                    {GENDERS.map((item) => (
+                      <option key={item}>{item}</option>
+                    ))}
+                  </select>
+                </label>
+                <label>
+                  TelepÃ¼lÃ©stÃ­pus
+                  <select
+                    value={settlementType}
+                    onChange={(event) => setSettlementType(event.target.value)}
+                    required
+                  >
+                    <option value="">VÃ¡lasszâ€¦</option>
+                    {SETTLEMENT_TYPES.map((item) => (
+                      <option key={item}>{item}</option>
+                    ))}
+                  </select>
+                </label>
+                <label>
+                  OrszÃ¡g
+                  <input
+                    value={country}
+                    onChange={(event) => setCountry(event.target.value)}
+                    placeholder="PÃ©ldÃ¡ul: MagyarorszÃ¡g"
+                    minLength={2}
+                    maxLength={80}
+                    required
+                  />
+                </label>
+                <label>
+                  Ã‰letkor
+                  <input
+                    type="number"
+                    value={age}
+                    onChange={(event) => setAge(event.target.value)}
+                    min={18}
+                    max={110}
+                    placeholder="18â€“110"
+                    required
+                  />
+                </label>
+              </div>
+              <label className="consent-checkbox">
+                <input
+                  type="checkbox"
+                  checked={specialConsent}
+                  onChange={(event) => setSpecialConsent(event.target.checked)}
+                  required
+                />
+                <span>
+                  Kifejezetten hozzÃ¡jÃ¡rulok, hogy a politikai vÃ©lemÃ©nyre utalÃ³
+                  kÃ©rdÅ‘Ã­vvÃ¡laszaimat kutatÃ¡si cÃ©lbÃ³l kezeljÃ©k.
+                  <small>
+                    A hozzÃ¡jÃ¡rulÃ¡s visszavonhatÃ³; a visszavonÃ¡s nem Ã©rinti a
+                    korÃ¡bbi kezelÃ©s jogszerÅ±sÃ©gÃ©t.
+                  </small>
+                </span>
+              </label>
+              {error ? <p className="form-error">{error}</p> : null}
+              <div className="consent-actions">
+                <button
+                  type="submit"
+                  className="primary-button"
+                  disabled={busy}
+                >
+                  {busy ? "BiztonsÃ¡gos mentÃ©sâ€¦" : "HozzÃ¡jÃ¡rulok a kutatÃ¡shoz"}
+                </button>
+                <button
+                  type="button"
+                  className="secondary-button"
+                  disabled={busy}
+                  onClick={declineResearch}
+                >
+                  Folytatom kutatÃ¡s nÃ©lkÃ¼l
+                </button>
+              </div>
+            </form>
+          </section>
+        </div>
+      ) : null}
+
+      {noticeOpen ? (
+        <NoticeModal onClose={() => setNoticeOpen(false)} />
+      ) : null}
+
+      {privacyOpen ? (
+        <div className="modal-backdrop">
+          <section
+            className="sheet-modal privacy-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="privacy-title"
+          >
+            <button
+              className="close-button"
+              aria-label="BezÃ¡rÃ¡s"
+              onClick={() => setPrivacyOpen(false)}
+            >
+              Ã—
+            </button>
+            <p className="eyebrow">Ã–nkiszolgÃ¡lÃ³ adatvÃ©delem</p>
+            <h2 id="privacy-title">A sajÃ¡t rÃ©szvÃ©teli adataid</h2>
+            <p>
+              A bÃ¶ngÃ©szÅ‘dben Å‘rzÃ¶tt vÃ©letlen kulccsal tudjuk megtalÃ¡lni a
+              rekordodat. A szerver a kulcsot csak a lenyomat kÃ©pzÃ©sÃ©hez
+              hasznÃ¡lja; maga a kulcs nem kerÃ¼l az adatbÃ¡zisba.
+            </p>
+            <div className="privacy-actions">
+              <button
+                className="secondary-button"
+                disabled={busy}
+                onClick={exportData}
+              >
+                SajÃ¡t adatok letÃ¶ltÃ©se
+              </button>
+              <button
+                className="danger-button"
+                disabled={busy}
+                onClick={deleteData}
+              >
+                SajÃ¡t adatok vÃ©gleges tÃ¶rlÃ©se
+              </button>
+            </div>
+            {error ? <p className="form-error">{error}</p> : null}
+            <small>
+              Ha a helyi bÃ¶ngÃ©szÅ‘adatokat tÃ¶rlÃ¶d a kulcs nÃ©lkÃ¼l, a rekord nem
+              lesz Ã¶sszekapcsolhatÃ³ veled. Ilyen esetben a GitHub-profilon jelzett
+              kapcsolati csatornÃ¡n kÃ©rhetsz segÃ­tsÃ©get.
+            </small>
+          </section>
+        </div>
+      ) : null}
+    </main>
+  );
+}
+
+function ownDimensionValue(
+  dimension: Dimension,
+  demographics?: Demographics,
+) {
+  if (!demographics) return "";
+  if (dimension === "age") return ageBand(demographics.age);
+  if (dimension === "country") return demographics.country;
+  if (dimension === "settlement") return demographics.settlementType;
+  return demographics.gender;
+}
+
+function NoticeModal({ onClose }: { onClose: () => void }) {
+  return (
+    <div className="modal-backdrop">
+      <section
+        className="sheet-modal notice-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="notice-title"
+      >
+        <button className="close-button" aria-label="BezÃ¡rÃ¡s" onClick={onClose}>
+          Ã—
+        </button>
+        <p className="eyebrow">VerziÃ³: {NOTICE_VERSION}</p>
+        <h2 id="notice-title">AdatkezelÃ©si Ã©s kutatÃ¡si tÃ¡jÃ©koztatÃ³</h2>
+        <p className="notice-lead">
+          Ez a tÃ¡jÃ©koztatÃ³ kÃ¶zÃ©rthetÅ‘en Ã©s teljes terjedelemben leÃ­rja a
+          MindCivilis kutatÃ¡si prototÃ­pus adatkezelÃ©sÃ©t. UtolsÃ³ frissÃ­tÃ©s:
+          2026. jÃºlius 28.
+        </p>
+
+        <div className="notice-content">
+          <section>
+            <h3>1. AdatkezelÅ‘ Ã©s kapcsolat</h3>
+            <p>
+              AdatkezelÅ‘: <strong>JÃ³zsef Janszky</strong>, a fÃ¼ggetlen
+              MindCivilis kutatÃ¡si projekt mÅ±kÃ¶dtetÅ‘je. Kapcsolat Ã©s azonosÃ­thatÃ³
+              nyilvÃ¡nos profil:{" "}
+              <a
+                href="https://github.com/janszkyjozsef"
+                target="_blank"
+                rel="noreferrer"
+              >
+                github.com/janszkyjozsef
+              </a>
+              . A sajÃ¡t rekord exportja Ã©s tÃ¶rlÃ©se az alkalmazÃ¡sban kÃ¶zvetlenÃ¼l
+              elvÃ©gezhetÅ‘.
+            </p>
+          </section>
+          <section>
+            <h3>2. A kutatÃ¡s cÃ©lja</h3>
+            <p>
+              A cÃ©l tÃ¡rsadalmi, gazdasÃ¡gi Ã©s nyitottsÃ¡gi nÃ©zetmintÃ¡zatok
+              feltÃ¡rÃ¡sa, valamint legalÃ¡bb tÃ­zfÅ‘s csoportok Ã¶sszesÃ­tett
+              Ã¶sszehasonlÃ­tÃ¡sa korosztÃ¡ly, orszÃ¡g, telepÃ¼lÃ©stÃ­pus Ã©s nem szerint.
+              Az eredmÃ©ny nem minÅ‘sÃ­tÃ©s, profilalkotÃ¡si dÃ¶ntÃ©s vagy politikai
+              diagnÃ³zis.
+            </p>
+          </section>
+          <section>
+            <h3>3. Kezelt adatok</h3>
+            <p>
+              HozzÃ¡jÃ¡rulÃ¡s esetÃ©n: nem, telepÃ¼lÃ©stÃ­pus, orszÃ¡g, Ã©letkor Ã©s
+              szÃ¡rmaztatott korcsoport; a 12 kÃ©rdÅ‘Ã­vvÃ¡lasz; hÃ¡rom szÃ¡mÃ­tott
+              tengelyÃ©rtÃ©k; a hozzÃ¡jÃ¡rulÃ¡s Ã©s kitÃ¶ltÃ©s idÅ‘pontja; a tÃ¡jÃ©koztatÃ³
+              verziÃ³ja; valamint egy vÃ©letlen helyi rÃ©szvÃ©teli kulcs
+              visszafordÃ­thatatlan lenyomata. NÃ©v, e-mail, telefonszÃ¡m vagy
+              hirdetÃ©si azonosÃ­tÃ³ nem kerÃ¼l az alkalmazÃ¡s adatbÃ¡zisÃ¡ba.
+            </p>
+            <p>
+              ElutasÃ­tÃ¡s esetÃ©n kizÃ¡rÃ³lag a rÃ©szvÃ©teli kulcs lenyomata, az
+              elutasÃ­tÃ¡s idÅ‘pontja Ã©s a tÃ¡jÃ©koztatÃ³ verziÃ³ja kerÃ¼l kÃ¼lÃ¶n,
+              privÃ¡t tÃ¡blÃ¡ba. DemogrÃ¡fiai vagy ideolÃ³giai adat ilyenkor nem
+              mentÅ‘dik.
+            </p>
+          </section>
+          <section>
+            <h3>4. Jogalap Ã©s kÃ¼lÃ¶nleges adat</h3>
+            <p>
+              Az Ã¡ltalÃ¡nos adatkezelÃ©s jogalapja az Ã¶nkÃ©ntes hozzÃ¡jÃ¡rulÃ¡s
+              (GDPR 6. cikk (1) a)). A politikai vÃ©lemÃ©nyre utalÃ³ vÃ¡laszok
+              kÃ¼lÃ¶nleges szemÃ©lyes adatnak minÅ‘sÃ¼lhetnek; kezelÃ©sÃ¼k alapja a
+              kÃ¼lÃ¶n, kifejezett hozzÃ¡jÃ¡rulÃ¡s (GDPR 9. cikk (2) a)). A
+              hozzÃ¡jÃ¡rulÃ¡s megtagadÃ¡sa nem jÃ¡r hÃ¡trÃ¡nnyal, Ã©s bÃ¡rmikor
+              visszavonhatÃ³.
+            </p>
+          </section>
+          <section>
+            <h3>5. TÃ¡rolÃ¡s, hozzÃ¡fÃ©rÃ©s Ã©s cÃ­mzettek</h3>
+            <p>
+              Az adatok nem nyilvÃ¡nos, hozzÃ¡fÃ©rÃ©s-vÃ©dett Cloudflare D1
+              adatbÃ¡zisban maradnak. A nyilvÃ¡nos felÃ¼leten csak legalÃ¡bb{" "}
+              {MIN_COHORT_SIZE} fÅ‘s csoportok szÃ¡ma Ã©s Ã¡tlaga jelenhet meg.
+              EgyÃ©ni vÃ¡lasz vagy rekord nem kerÃ¼l nyilvÃ¡nossÃ¡gra. Az alkalmazÃ¡s
+              sajÃ¡t adatbÃ¡zisa nem rÃ¶gzÃ­t IP-cÃ­met vagy bÃ¶ngÃ©szÅ‘azonosÃ­tÃ³t; a
+              tÃ¡rhely- Ã©s hÃ¡lÃ³zati szolgÃ¡ltatÃ³k biztonsÃ¡gi naplÃ³i ettÅ‘l
+              fÃ¼ggetlenÃ¼l, sajÃ¡t szabÃ¡lyaik szerint keletkezhetnek.
+            </p>
+            <p>
+              Technikai szolgÃ¡ltatÃ³kÃ©nt a webhelyet biztosÃ­tÃ³ OpenAI Sites Ã©s
+              annak Cloudflare-infrastruktÃºrÃ¡ja fÃ©rhet hozzÃ¡ az adatokhoz a
+              szolgÃ¡ltatÃ¡s mÅ±kÃ¶dtetÃ©sÃ©hez Ã©s vÃ©delmÃ©hez.
+            </p>
+          </section>
+          <section>
+            <h3>6. MegÅ‘rzÃ©si idÅ‘</h3>
+            <p>
+              A kutatÃ¡si rekordokat legfeljebb 24 hÃ³napig, illetve a
+              hozzÃ¡jÃ¡rulÃ¡s visszavonÃ¡sÃ¡ig kezeljÃ¼k. A tÃ¶rlÃ©s az alkalmazÃ¡sbÃ³l
+              azonnal kezdemÃ©nyezhetÅ‘. A mÃ¡r jogszerÅ±en lÃ©trehozott, kizÃ¡rÃ³lag
+              Ã¶sszesÃ­tett Ã©s szemÃ©lyhez tÃ¶bbÃ© nem kapcsolhatÃ³ statisztika nem
+              feltÃ©tlenÃ¼l Ã¡llÃ­thatÃ³ vissza egyÃ©ni rekordra.
+            </p>
+          </section>
+          <section>
+            <h3>7. Az Ã©rintett jogai</h3>
+            <p>
+              KÃ©rhetÅ‘ hozzÃ¡fÃ©rÃ©s, helyesbÃ­tÃ©s, tÃ¶rlÃ©s, korlÃ¡tozÃ¡s,
+              adathordozhatÃ³sÃ¡g, valamint a hozzÃ¡jÃ¡rulÃ¡s visszavonÃ¡sa. A helyi
+              kulccsal az export Ã©s a tÃ¶rlÃ©s Ã¶nkiszolgÃ¡lÃ³an elÃ©rhetÅ‘. Panasz a
+              Nemzeti AdatvÃ©delmi Ã©s InformÃ¡ciÃ³szabadsÃ¡g HatÃ³sÃ¡gnÃ¡l (NAIH) vagy
+              az illetÃ©kes bÃ­rÃ³sÃ¡gnÃ¡l nyÃºjthatÃ³ be.
+            </p>
+          </section>
+          <section>
+            <h3>8. BiztonsÃ¡g Ã©s automatizÃ¡lt dÃ¶ntÃ©s</h3>
+            <p>
+              ÃlnevesÃ­tett azonosÃ­tÃ¡st, elkÃ¼lÃ¶nÃ­tett elutasÃ­tÃ¡si rekordokat,
+              titkosÃ­tott hÃ¡lÃ³zati kapcsolatot Ã©s minimumlÃ©tszÃ¡mÃº aggregÃ¡lÃ¡st
+              alkalmazunk. A pontszÃ¡m automatikus matematikai Ã¶sszesÃ­tÃ©s, de nem
+              jÃ¡r jogi vagy hasonlÃ³an jelentÅ‘s hatÃ¡ssal, Ã©s nem hasznÃ¡ljuk
+              szemÃ©lyre szabott politikai befolyÃ¡solÃ¡sra.
+            </p>
+          </section>
+          <section>
+            <h3>9. KutatÃ¡si korlÃ¡tok</h3>
+            <p>
+              A minta Ã¶nkÃ©ntes, ezÃ©rt nem reprezentatÃ­v. Az orszÃ¡gok Ã©s
+              csoportok kÃ¶zÃ¶tti eltÃ©rÃ©s nem jelent ok-okozati kapcsolatot. Az
+              alacsony elemszÃ¡mÃº csoportokat a rendszer elrejti; hamis vagy
+              szintetikus csoportadatokat nem jelenÃ­t meg.
+            </p>
+          </section>
+        </div>
+        <button className="primary-button" onClick={onClose}>
+          Ã‰rtem, bezÃ¡rom
+        </button>
+      </section>
+    </div>
+  );
+}
