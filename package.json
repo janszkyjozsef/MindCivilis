@@ -1,0 +1,31 @@
+{
+  "name": "mindcivilis-web",
+  "version": "1.0.0",
+  "description": "A private, local-first civic identity atlas with multilingual questionnaires and profile comparison.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node scripts/prepare-sites.mjs",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "validate:sites": "node scripts/validate-sites.mjs"
+  },
+  "dependencies": {
+    "@phosphor-icons/react": "^2.1.10",
+    "@vitejs/plugin-react": "5.0.4",
+    "cytoscape": "^3.34.0",
+    "idb-keyval": "^6.3.0",
+    "react": "19.2.0",
+    "react-cytoscapejs": "^2.0.0",
+    "react-dom": "19.2.0",
+    "recharts": "^3.9.2",
+    "vite": "6.4.2"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "jsdom": "^29.1.1",
+    "vitest": "^4.1.10"
+  }
+}
