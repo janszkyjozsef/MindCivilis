@@ -330,1010 +330,782 @@ function HomeScreen({ lang, state, profile, navigate, startTest }) {
   const recommended = QUESTIONNAIRES.find((test) => !completedIds.has(test.id)) ?? QUESTIONNAIRES[0];
   const draft = Object.entries(state.drafts).find(([, value]) => Object.keys(value.answers ?? {}).length > 0);
   const atlas = profile.hasData ? profile : { scores: DEMO_SCORES, confidence: Object.fromEntries(Object.keys(DEMO_SCORES).map((id) => [id, 0.72])) };
-  const radarIds = ["community…87609 tokens truncated…us: 6px;
-  color: #b8c8d3;
-  font-size: 8px;
-}
-
-.research-receipt strong {
-  display: block;
-  margin-bottom: 4px;
-  color: #6f8798;
-  font-size: 7px;
-}
-
-.research-data-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.cohort-section {
-  margin-top: 18px;
-  padding: 23px;
-}
-
-.cohort-section > p {
-  max-width: 760px;
-  color: #718797;
-  font-size: 9px;
-  line-height: 1.6;
-}
-
-.cohort-locked {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  gap: 14px;
-  margin-top: 17px;
-  padding: 18px;
-  border: 1px solid rgba(231, 180, 90, 0.2);
-  border-radius: 8px;
-  background: rgba(143, 101, 33, 0.07);
-  color: #a28c62;
-}
-
-.cohort-locked strong {
-  color: #d5c291;
-  font-size: 9px;
-}
-
-.cohort-locked p {
-  margin: 4px 0 0;
-  font-size: 7px;
-}
-
-.cohort-controls {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 7px;
-  margin-top: 18px;
-}
-
-.cohort-controls > span {
-  margin-right: 5px;
-  color: #718798;
-  font-size: 8px;
-}
-
-.cohort-controls button {
-  min-height: 31px;
-  padding: 0 11px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: rgba(4, 17, 28, 0.7);
-  color: #8297a7;
-  font-size: 8px;
-  cursor: pointer;
-}
-
-.cohort-controls button.active {
-  border-color: rgba(63, 167, 255, 0.38);
-  background: rgba(49, 134, 196, 0.14);
-  color: #b9dcf2;
-}
-
-.cohort-empty {
-  min-height: 150px;
-  display: grid;
-  place-items: center;
-  align-content: center;
-  gap: 8px;
-  margin-top: 16px;
-  padding: 25px;
-  border: 1px dashed var(--line-strong);
-  border-radius: 8px;
-  color: #637e91;
-  font-size: 8px;
-  text-align: center;
-}
-
-.cohort-empty svg {
-  width: 30px;
-  height: 30px;
-}
-
-.cohort-empty strong {
-  color: #a9bdca;
-  font-size: 10px;
-}
-
-.cohort-empty.error {
-  color: #dc8c7c;
-}
-
-.cohort-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
-  margin-top: 16px;
-}
-
-.cohort-grid > article {
-  padding: 17px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: rgba(3, 15, 25, 0.58);
-}
-
-.cohort-grid header {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-}
-
-.cohort-grid header strong,
-.cohort-grid header span {
-  display: block;
-}
-
-.cohort-grid header strong {
-  color: #d7e1e7;
-  font-family: var(--serif);
-  font-size: 17px;
-  font-weight: 500;
-}
-
-.cohort-grid header span {
-  margin-top: 3px;
-  color: #6e8596;
-  font-size: 7px;
-}
-
-.privacy-threshold {
-  height: fit-content;
-  display: inline-flex !important;
-  align-items: center;
-  gap: 4px;
-  padding: 5px 7px;
-  border-radius: 999px;
-  background: rgba(53, 151, 98, 0.09);
-  color: #75d99f !important;
-}
-
-.cohort-score-list {
-  margin-top: 15px;
-}
-
-.cohort-score-list > div {
-  display: grid;
-  grid-template-columns: minmax(100px, 0.9fr) minmax(120px, 1.3fr) 56px;
-  align-items: center;
-  gap: 8px;
-  padding: 7px 0;
-  border-top: 1px solid rgba(90, 124, 149, 0.11);
-  color: #7f95a5;
-  font-size: 7px;
-}
-
-.cohort-score-list > div > strong {
-  color: #bdd0dc;
-  font-size: 8px;
-  text-align: right;
-}
-
-.cohort-score-list > div > strong small {
-  color: #7190a4;
-}
-
-.cohort-dual-track {
-  position: relative;
-  height: 5px;
-  border-radius: 999px;
-  background: rgba(77, 111, 136, 0.18);
-}
-
-.cohort-dual-track i {
-  position: absolute;
-  inset: 0 auto 0 0;
-  border-radius: inherit;
-  opacity: 0.7;
-}
-
-.cohort-dual-track em {
-  position: absolute;
-  top: 50%;
-  width: 2px;
-  height: 13px;
-  border-radius: 2px;
-  background: #f0eadf;
-  transform: translate(-1px, -50%);
-  box-shadow: 0 0 0 2px rgba(3, 15, 25, 0.8);
-}
-
-.cohort-legend {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: 12px !important;
-  font-size: 7px !important;
-}
-
-.cohort-legend i {
-  width: 18px;
-  height: 4px;
-  border-radius: 99px;
-  background: var(--blue);
-}
-
-.cohort-legend em {
-  width: 2px;
-  height: 11px;
-  margin-left: 8px;
-  background: #f0eadf;
-}
-
-.entry-overlay {
-  position: fixed;
-  z-index: 200;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  padding: 24px;
-  overflow: auto;
-  background: rgba(0, 6, 11, 0.82);
-  backdrop-filter: blur(14px);
-}
-
-.entry-dialog {
-  width: min(930px, 100%);
-  max-height: calc(100vh - 48px);
-  overflow: auto;
-  border: 1px solid rgba(87, 151, 199, 0.28);
-  border-radius: 12px;
-  background:
-    radial-gradient(circle at 88% 5%, rgba(35, 124, 194, 0.16), transparent 24rem),
-    linear-gradient(145deg, #071826, #030d17 72%);
-  box-shadow: 0 48px 130px rgba(0, 0, 0, 0.58);
-}
-
-.entry-dialog-top {
-  min-height: 68px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 0 28px;
-  border-bottom: 1px solid var(--line);
-}
-
-.entry-content {
-  padding: 35px;
-}
-
-.entry-content > h1 {
-  max-width: 700px;
-  margin: 0;
-  color: #f1eee8;
-  font-family: var(--serif);
-  font-size: clamp(34px, 5vw, 51px);
-  font-weight: 500;
-  line-height: 1.02;
-}
-
-.entry-intro {
-  max-width: 680px;
-  margin: 14px 0 0;
-  color: #8398a8;
-  font-size: 10px;
-  line-height: 1.65;
-}
-
-.entry-choice-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 13px;
-  margin-top: 28px;
-}
-
-.entry-choice {
-  min-height: 290px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 22px;
-  border: 1px solid rgba(101, 214, 148, 0.22);
-  border-radius: 10px;
-  background: linear-gradient(150deg, rgba(49, 152, 98, 0.08), rgba(4, 16, 27, 0.72));
-  color: #dce6ec;
-  text-align: left;
-  cursor: pointer;
-  transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
-}
-
-.entry-choice.research {
-  border-color: rgba(63, 167, 255, 0.25);
-  background: linear-gradient(150deg, rgba(42, 132, 202, 0.1), rgba(4, 16, 27, 0.72));
-}
-
-.entry-choice:hover {
-  transform: translateY(-2px);
-  border-color: rgba(109, 204, 247, 0.55);
-}
-
-.entry-choice-icon {
-  width: 48px;
-  height: 48px;
-  display: grid;
-  place-items: center;
-  border: 1px solid currentColor;
-  border-radius: 9px;
-}
-
-.entry-choice-icon.private { color: var(--green); }
-.entry-choice-icon.research { color: var(--blue); }
-
-.entry-choice > strong {
-  margin-top: 24px;
-  color: #eef1f1;
-  font-family: var(--serif);
-  font-size: 24px;
-  font-weight: 500;
-}
-
-.entry-choice > p {
-  margin: 10px 0 0;
-  color: #7e93a3;
-  font-size: 9px;
-  line-height: 1.65;
-}
-
-.entry-choice > small {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  margin-top: 16px;
-  color: #6f8d80;
-  font-size: 7px;
-}
-
-.entry-choice.research > small {
-  color: #7199b5;
-}
-
-.entry-choice-action {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: auto;
-  padding-top: 18px;
-  border-top: 1px solid var(--line);
-  color: #9fcde9;
-  font-size: 9px;
-  font-weight: 650;
-}
-
-.entry-back {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  margin-bottom: 24px;
-  padding: 0;
-  border: 0;
-  background: transparent;
-  color: #73a9cb;
-  font-size: 8px;
-  cursor: pointer;
-}
-
-.collection-status {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 10px;
-  margin-top: 20px;
-  padding: 13px;
-  border: 1px solid rgba(231, 180, 90, 0.22);
-  border-radius: 7px;
-  background: rgba(143, 101, 33, 0.08);
-  color: #a68f64;
-}
-
-.collection-status strong,
-.collection-status span {
-  display: block;
-}
-
-.collection-status strong { font-size: 9px; }
-.collection-status span { margin-top: 4px; font-size: 7px; line-height: 1.5; }
-
-.entry-consents {
-  margin-top: 10px;
-}
-
-.entry-actions {
-  display: flex;
-  justify-content: flex-end;
-  gap: 9px;
-  margin-top: 21px;
-}
-
-.primary-button:disabled {
-  opacity: 0.42;
-  cursor: not-allowed;
-  transform: none;
-}
-
-.privacy-sources {
-  display: grid;
-  grid-template-columns: minmax(200px, 1fr) minmax(300px, 1.6fr) auto;
-  align-items: center;
-  gap: 20px;
-  margin-top: 16px;
-  padding: 20px;
-}
-
-.privacy-sources h2 {
-  margin: 0;
-  color: #d3dfe6;
-  font-family: var(--serif);
-  font-size: 19px;
-  font-weight: 500;
-}
-
-.privacy-sources p {
-  margin: 4px 0 0;
-  color: #657c8e;
-  font-size: 8px;
-}
-
-.source-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.source-links a {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  padding: 7px 9px;
-  border: 1px solid var(--line);
-  border-radius: 5px;
-  color: #77b6e1;
-  font-size: 7px;
-  text-decoration: none;
-}
-
-.danger-button {
-  border: 1px solid rgba(231, 109, 96, 0.32);
-  background: rgba(156, 59, 52, 0.12);
-  color: #ef9b92;
-}
-
-.toast {
-  position: fixed;
-  z-index: 100;
-  right: 20px;
-  bottom: 20px;
-  max-width: min(420px, calc(100vw - 40px));
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  gap: 10px;
-  padding: 13px 14px;
-  border: 1px solid rgba(85, 193, 132, 0.35);
-  border-radius: 8px;
-  background: rgba(6, 31, 24, 0.96);
-  color: #a9dfbf;
-  box-shadow: var(--shadow);
-  font-size: 9px;
-}
-
-.toast.error {
-  border-color: rgba(224, 105, 93, 0.35);
-  background: rgba(46, 16, 15, 0.96);
-  color: #eeafa8;
-}
-
-.toast button {
-  display: grid;
-  place-items: center;
-  border: 0;
-  background: transparent;
-  color: inherit;
-  cursor: pointer;
-}
-
-.mobile-overlay {
-  display: none;
-}
-
-@media (max-width: 1180px) {
-  .app-shell {
-    grid-template-columns: 196px minmax(0, 1fr);
-  }
-
-  .sidebar {
-    width: 196px;
-  }
-
-  .page {
-    width: min(1120px, calc(100% - 40px));
-  }
-
-  .home-hero {
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-  }
-
-  .hero-copy h1 {
-    font-size: 52px;
-  }
-
-  .test-grid,
-  .dimension-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .atlas-visual-shell,
-  .fieldbook-scene {
-    grid-template-columns: minmax(0, 1fr) 260px;
-  }
-
-  .fieldbook-tabs {
-    right: 253px;
-  }
-
-  .fieldbook-paper {
-    padding-inline: 28px;
-  }
-
-  .fieldbook-content-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .fieldbook-radar {
-    display: none;
-  }
-}
-
-@media (max-width: 900px) {
-  .app-shell {
-    display: block;
-  }
-
-  .workspace {
-    min-width: 0;
-  }
-
-  .sidebar {
-    width: min(280px, 86vw);
-    transform: translateX(-105%);
-    transition: transform 220ms ease;
-  }
-
-  .sidebar.mobile-open {
-    transform: translateX(0);
-  }
-
-  .mobile-close {
-    display: grid;
-  }
-
-  .mobile-overlay {
-    position: fixed;
-    z-index: 45;
-    inset: 0;
-    display: block;
-    border: 0;
-    background: rgba(0, 5, 9, 0.68);
-    backdrop-filter: blur(3px);
-  }
-
-  .topbar {
-    height: 60px;
-    justify-content: space-between;
-    padding: 0 18px;
-  }
-
-  .topbar > .brand,
-  .mobile-menu {
-    display: flex;
-  }
-
-  .topbar > .brand {
-    margin-right: auto;
-  }
-
-  .topbar > .brand .brand-mark {
-    width: 30px;
-    height: 30px;
-    flex-basis: 30px;
-  }
-
-  .mobile-menu {
-    width: 34px;
-    height: 34px;
-    align-items: center;
-    justify-content: center;
-    border: 0;
-    background: transparent;
-    color: #8aa1b2;
-  }
-
-  .local-status {
-    display: none;
-  }
-
-  .topbar .language-switch button {
-    min-width: 31px;
-  }
-
-  .page {
-    width: min(100% - 28px, 800px);
-    padding-top: 32px;
-  }
-
-  .section-header {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 18px;
-  }
-
-  .home-hero {
-    grid-template-columns: 1fr;
-    padding-top: 15px;
-  }
-
-  .hero-copy {
-    max-width: none;
-  }
-
-  .hero-atlas-card {
-    min-height: 410px;
-  }
-
-  .home-grid,
-  .settings-layout,
-  .insight-layout,
-  .comparison-grid,
-  .research-status-grid,
-  .cohort-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .research-track-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .data-tier-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .quiz-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .quiz-aside {
-    order: -1;
-  }
-
-  .blind-visual,
-  .live-scores {
-    min-height: 130px;
-  }
-
-  .atlas-visual-shell,
-  .fieldbook-scene {
-    grid-template-columns: 1fr;
-  }
-
-  .atlas-detail {
-    border-top: 1px solid var(--line);
-    border-left: 0;
-  }
-
-  .fieldbook-scene {
-    padding: 8px;
-  }
-
-  .fieldbook-scene > .atlas-detail {
-    margin: 12px -8px -8px;
-  }
-
-  .fieldbook-tabs {
-    display: none;
-  }
-
-  .privacy-sources {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 650px) {
-  .topbar {
-    gap: 8px;
-  }
-
-  .topbar > .brand strong {
-    font-size: 15px;
-  }
-
-  .topbar .language-switch button {
-    min-width: 27px;
-    padding: 0 5px;
-  }
-
-  .home-page {
-    padding-top: 20px;
-  }
-
-  .hero-copy h1,
-  .section-header h1,
-  .result-hero h1 {
-    font-size: 38px;
-  }
-
-  .hero-copy > p:not(.eyebrow) {
-    font-size: 12px;
-  }
-
-  .hero-actions,
-  .result-actions,
-  .import-actions,
-  .entry-actions {
-    align-items: stretch;
-    flex-direction: column;
-  }
-
-  .hero-actions button,
-  .result-actions button,
-  .import-actions button,
-  .entry-actions button {
-    width: 100%;
-  }
-
-  .entry-overlay {
-    align-items: start;
-    padding: 9px;
-  }
-
-  .entry-dialog {
-    max-height: none;
-  }
-
-  .entry-dialog-top {
-    min-height: 60px;
-    padding: 0 16px;
-  }
-
-  .entry-dialog-top .brand span {
-    display: none;
-  }
-
-  .entry-content {
-    padding: 25px 17px;
-  }
-
-  .entry-choice-grid,
-  .research-track-grid,
-  .research-demographics,
-  .research-receipt {
-    grid-template-columns: 1fr;
-  }
-
-  .entry-choice {
-    min-height: 255px;
-  }
-
-  .researcher-links {
-    flex-direction: column;
-  }
-
-  .cohort-locked {
-    grid-template-columns: 1fr;
-  }
-
-  .cohort-score-list > div {
-    grid-template-columns: minmax(90px, 0.8fr) minmax(100px, 1.2fr) 46px;
-  }
-
-  .researcher-links a {
-    width: 100%;
-  }
-
-  .research-mode-control > div {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-atlas-card {
-    min-height: 340px;
-  }
-
-  .hero-radar {
-    inset: 20px 4px 38px;
-  }
-
-  .view-preview-grid,
-  .test-grid,
-  .dimension-grid,
-  .result-metrics,
-  .metric-grid,
-  .fieldbook-insights {
-    grid-template-columns: 1fr;
-  }
-
-  .view-preview-grid button {
-    min-height: 105px;
-  }
-
-  .privacy-strip {
-    grid-template-columns: auto 1fr;
-  }
-
-  .privacy-strip button {
-    grid-column: 2;
-    justify-self: start;
-  }
-
-  .section-actions,
-  .atlas-switch {
-    width: 100%;
-  }
-
-  .atlas-switch button {
-    flex: 1;
-    justify-content: center;
-    padding-inline: 6px;
-  }
-
-  .atlas-page {
-    width: calc(100% - 16px);
-  }
-
-  .atlas-filters {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    padding-bottom: 4px;
-  }
-
-  .atlas-filters button {
-    flex: 0 0 auto;
-  }
-
-  .constellation-canvas,
-  .terrain-map {
-    min-height: 510px;
-  }
-
-  .fieldbook-scene {
-    min-height: auto;
-  }
-
-  .fieldbook-paper {
-    min-height: 680px;
-    padding: 22px 18px 36px;
-  }
-
-  .fieldbook-paper > h2 {
-    font-size: 35px;
-  }
-
-  .fieldbook-content-grid {
-    gap: 8px;
-  }
-
-  .ledger-row {
-    grid-template-columns: 120px 1fr 24px;
-  }
-
-  .paper-footer {
-    inset-inline: 18px;
-  }
-
-  .quiz-header {
-    padding: 0 12px;
-  }
-
-  .quiz-title span {
-    max-width: 160px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  .save-exit-button {
-    width: 38px;
-    padding: 0;
-    font-size: 0;
-  }
-
-  .quiz-layout {
-    width: calc(100% - 18px);
-    padding: 16px 0 30px;
-  }
-
-  .quiz-aside {
-    display: none;
-  }
-
-  .question-panel {
-    min-height: calc(100vh - 96px);
-    padding: 24px 17px;
-  }
-
-  .question-panel h1 {
-    margin-top: 38px;
-    font-size: 29px;
-  }
-
-  .likert-scale {
-    margin-top: 48px;
-  }
-
-  .scale-options {
-    gap: 5px;
-  }
-
-  .scale-options button:nth-child(n) {
-    width: 42px;
-    height: 42px;
-    margin-top: 0;
-  }
-
-  .result-dimension {
-    grid-template-columns: 1fr 40px;
-    padding: 12px 0;
-  }
-
-  .result-dimension > div:first-child {
-    grid-column: 1;
-  }
-
-  .result-bar {
-    grid-column: 1 / -1;
-    grid-row: 2;
-  }
-
-  .result-dimension > strong {
-    grid-column: 2;
-    grid-row: 1;
-  }
-
-  .history-details > div {
-    grid-template-columns: 110px 1fr 27px;
-  }
-
-  .export-box {
-    grid-template-columns: auto 1fr;
-  }
-
-  .export-box button {
-    grid-column: 1 / -1;
-    justify-content: center;
-  }
-
-  .compare-row {
-    grid-template-columns: 112px 1fr;
-  }
-
-  .compare-row > strong {
-    display: none;
-  }
-
-  .form-grid,
-  .inventory-list {
-    grid-template-columns: 1fr;
-  }
-
-  .form-grid label:last-child {
-    grid-column: auto;
-  }
-
-  .inventory-list small {
-    grid-column: 2 / 4;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    scroll-behavior: auto !important;
-    transition-duration: 0.01ms !important;
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-  }
+  const radarIds = ["communityValue", "autonomyValue", "democraticChecks", "epistemicCare", "futureOrientation", "dialogueStyle"];
+  const radar = radarIds.map((id) => ({ label: localize(DIMENSIONS[id].label, lang).split(" ")[0], score: atlas.scores[id] ?? 50 }));
+  return (
+    <div className="page home-page">
+      <section className="home-hero">
+        <div className="hero-copy">
+          <p className="eyebrow">{t(lang, "welcomeEyebrow")}</p>
+          <h1>{t(lang, "welcomeTitle")}</h1>
+          <p>{t(lang, "welcomeBody")}</p>
+          <div className="hero-actions">
+            <button className="primary-button" onClick={() => startTest("political-quick")}><Play weight="fill" />{t(lang, "startSnapshot")}</button>
+            <button className="secondary-button" onClick={() => navigate("atlas")}><ChartPolar />{t(lang, "openAtlas")}</button>
+          </div>
+          {draft ? (
+            <button className="resume-line" onClick={() => startTest(draft[0])}><ClockCounterClockwise />{t(lang, "continueDraft")}<ArrowRight /></button>
+          ) : null}
+        </div>
+        <div className="hero-atlas-card" role="img" aria-label={t(lang, "navAtlas")}>
+          <div className="hero-orbit hero-orbit-one" />
+          <div className="hero-orbit hero-orbit-two" />
+          <div className="hero-radar">
+            <ResponsiveContainer width="100%" height="100%">
+              <RadarChart data={radar} outerRadius="67%">
+                <PolarGrid stroke="#29445e" />
+                <PolarAngleAxis dataKey="label" tick={{ fill: "#a8bac9", fontSize: 9 }} />
+                <Radar dataKey="score" stroke="#41aaff" fill="#2689e6" fillOpacity={0.24} strokeWidth={2} />
+              </RadarChart>
+            </ResponsiveContainer>
+          </div>
+          <div className="hero-atlas-center"><span>M</span><small>{profile.hasData ? t(lang, "yourData") : t(lang, "exampleData")}</small></div>
+          <div className="atlas-card-footer"><span><i className="blue" />{t(lang, "groupPolitical")}</span><span><i className="green" />{t(lang, "groupValues")}</span><span><i className="purple" />{t(lang, "groupPersonality")}</span></div>
+        </div>
+      </section>
+
+      <section className="home-grid">
+        <div className="progress-card panel-card">
+          <div className="card-heading"><div><p className="eyebrow">{t(lang, "progress")}</p><h2>{completion}% {t(lang, "completed")}</h2></div><span className="progress-dial" style={{ "--progress": `${completion * 3.6}deg` }}>{completedIds.size}/{QUESTIONNAIRES.length}</span></div>
+          <div className="progress-track"><span style={{ width: `${completion}%` }} /></div>
+          <button className="recommended-test" onClick={() => startTest(recommended.id)}>
+            <span className="recommended-icon" style={{ color: recommended.accent }}><Brain weight="duotone" /></span>
+            <span><small>{t(lang, "recommended")}</small><strong>{localize(recommended.title, lang)}</strong><em>{recommended.questions.length} {t(lang, "questions")} · {recommended.minutes} {t(lang, "minutes")}</em></span>
+            <ArrowRight />
+          </button>
+        </div>
+        <div className="views-card panel-card">
+          <div className="card-heading"><div><p className="eyebrow">{t(lang, "threeViews")}</p><h2>{t(lang, "navAtlas")}</h2></div><button className="text-button" onClick={() => navigate("atlas")}>{t(lang, "openFullAtlas")}<ArrowRight /></button></div>
+          <div className="view-preview-grid">
+            {[
+              [ChartPolar, "viewConstellation", "viewConstellationDesc", "#3fa7ff"],
+              [BookOpenText, "viewFieldbook", "viewFieldbookDesc", "#e7b45a"],
+              [MapTrifold, "viewTerrain", "viewTerrainDesc", "#65d694"],
+            ].map(([Icon, key, desc, color]) => (
+              <button key={key} onClick={() => navigate("atlas")}><span style={{ color }}><Icon weight="duotone" /></span><strong>{t(lang, key)}</strong><small>{t(lang, desc)}</small></button>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="privacy-strip">
+        <ShieldCheck size={28} weight="duotone" />
+        <div><strong>{t(lang, "privateByDesign")}</strong><span>{t(lang, state.research.mode === "research" ? "researchStorageBody" : "privateStorageBody")}</span></div>
+        <button onClick={() => navigate("settings")}>{t(lang, "learnMore")}<ArrowRight /></button>
+      </section>
+    </div>
+  );
+}
+
+function TestsScreen({ lang, state, startTest }) {
+  const [filter, setFilter] = useState("all");
+  const completedIds = new Set(state.history.map((entry) => entry.questionnaireId));
+  const tests = QUESTIONNAIRES.filter((test) => {
+    if (filter === "all") return true;
+    if (filter === "exploratory") return test.category === "exploratory";
+    return test.category === filter;
+  });
+  return (
+    <div className="page tests-page">
+      <SectionHeader
+        eyebrow={`${QUESTIONNAIRES.length} modules · ${getDocumentedItemCount()} items`}
+        title={t(lang, "testsTitle")}
+        body={t(lang, "testsIntro")}
+      />
+      <div className="filter-row">
+        {FILTERS.map(([id, key]) => <button key={id} className={filter === id ? "active" : ""} onClick={() => setFilter(id)}>{t(lang, key)}</button>)}
+      </div>
+      <div className="test-grid">
+        {tests.map((test) => {
+          const draft = state.drafts[test.id];
+          const answered = Object.values(draft?.answers ?? {}).filter((value) => value !== undefined).length;
+          const complete = completedIds.has(test.id);
+          return (
+            <article className="test-card" key={test.id} style={{ "--accent": test.accent }}>
+              <div className="test-card-top">
+                <span className="test-category">{t(lang, test.category === "exploratory" ? "filterExploratory" : test.category === "civic" ? "filterCivic" : test.category === "values" ? "filterValues" : test.category === "personality" ? "filterPersonality" : "filterPolitical")}</span>
+                {complete ? <span className="complete-badge"><Check />{t(lang, "complete")}</span> : null}
+              </div>
+              <h2>{localize(test.title, lang)}</h2>
+              <p>{localize(test.description, lang)}</p>
+              <div className="test-meta"><span>{test.questions.length} {t(lang, "questions")}</span><i /><span>{test.minutes} {t(lang, "minutes")}</span></div>
+              <div className="test-status"><Info /><span>{t(lang, test.status === "public-domain" ? "publicDomainNote" : test.status === "interpretive" ? "validatedNote" : "exploratoryNote")}</span></div>
+              {answered ? <div className="mini-progress"><span style={{ width: `${(answered / test.questions.length) * 100}%` }} /></div> : null}
+              <button className="card-action" onClick={() => startTest(test.id)}>
+                {answered ? t(lang, "resume") : complete ? t(lang, "retake") : t(lang, "start")}
+                <ArrowRight />
+              </button>
+            </article>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+function QuizScreen({ lang, state, setState, test, onExit, onComplete }) {
+  const carriedAnswers = useMemo(() => {
+    const compatible = {};
+    state.history.forEach((entry) => {
+      Object.entries(entry.rawAnswers ?? {}).forEach(([questionId, answer]) => {
+        if (test.questions.some((question) => question.id === questionId)) compatible[questionId] = answer;
+      });
+    });
+    return { ...compatible, ...(state.drafts[test.id]?.answers ?? {}) };
+  }, [state.history, state.drafts, test]);
+  const [answers, setAnswers] = useState(carriedAnswers);
+  const [index, setIndex] = useState(Math.min(state.drafts[test.id]?.index ?? 0, test.questions.length - 1));
+  const [mode, setMode] = useState(state.preferences.scoringMode ?? "blind");
+  const question = test.questions[index];
+  const answered = Object.values(answers).filter((value) => value !== undefined).length;
+  const liveProfile = mergeLiveProfile(state.history, test, answers);
+  const liveScores = getTopDimensions(liveProfile, 4);
+
+  useEffect(() => {
+    setState((current) => ({
+      ...current,
+      drafts: { ...current.drafts, [test.id]: { answers, index, updatedAt: new Date().toISOString() } },
+      preferences: { ...current.preferences, scoringMode: mode },
+    }));
+  }, [answers, index, mode, setState, test.id]);
+
+  const choose = (value) => {
+    setAnswers((current) => ({ ...current, [question.id]: value }));
+    if (index < test.questions.length - 1) window.setTimeout(() => setIndex((current) => current + 1), 120);
+  };
+
+  const finish = () => {
+    const result = scoreQuestionnaire(test, answers);
+    const completion = { ...result, rawAnswers: answers };
+    setState((current) => {
+      const drafts = { ...current.drafts };
+      delete drafts[test.id];
+      return { ...current, drafts, history: [...current.history, completion] };
+    });
+    onComplete(completion);
+  };
+
+  return (
+    <div className="quiz-page">
+      <header className="quiz-header">
+        <button className="icon-button" onClick={onExit}><ArrowLeft /></button>
+        <div className="quiz-title"><span style={{ color: test.accent }}>{localize(test.title, lang)}</span><small>{answered}/{test.questions.length} {t(lang, "answerCount")}</small></div>
+        <button className="save-exit-button" onClick={onExit}><FloppyDisk />{t(lang, "saveExit")}</button>
+      </header>
+      <div className="quiz-progress"><span style={{ width: `${((index + 1) / test.questions.length) * 100}%`, background: test.accent }} /></div>
+      <main className="quiz-layout">
+        <section className="question-panel">
+          <div className="question-meta"><span>{String(index + 1).padStart(2, "0")} / {test.questions.length}</span><span className="local-save"><Check />{t(lang, "autosaved")}</span></div>
+          <h1>{localize(question.text, lang)}</h1>
+          <div className="likert-scale">
+            <div className="scale-labels"><span>{t(lang, "quizDisagree")}</span><span>{t(lang, "quizAgree")}</span></div>
+            <div className="scale-options">
+              {[1, 2, 3, 4, 5].map((value) => <button key={value} className={answers[question.id] === value ? "selected" : ""} onClick={() => choose(value)}><span>{value}</span>{value === 3 ? <small>{t(lang, "quizNeutral")}</small> : null}</button>)}
+            </div>
+            <button className={classNames("skip-button", answers[question.id] === 0 && "selected")} onClick={() => choose(0)}>{t(lang, "quizSkip")}</button>
+          </div>
+          <div className="quiz-nav">
+            <button disabled={index === 0} onClick={() => setIndex((current) => Math.max(0, current - 1))}><ArrowLeft />{t(lang, "previous")}</button>
+            {index === test.questions.length - 1 ? <button className="primary-button" onClick={finish}>{t(lang, "finish")}<Check /></button> : <button onClick={() => setIndex((current) => Math.min(test.questions.length - 1, current + 1))}>{t(lang, "next")}<ArrowRight /></button>}
+          </div>
+        </section>
+        <aside className="quiz-aside">
+          <div className="mode-switch">
+            <button className={mode === "blind" ? "active" : ""} onClick={() => setMode("blind")}><EyeSlash />{t(lang, "blindMode")}</button>
+            <button className={mode === "live" ? "active" : ""} onClick={() => setMode("live")}><Eye />{t(lang, "liveMode")}</button>
+          </div>
+          <p>{t(lang, mode === "blind" ? "blindModeHint" : "liveModeHint")}</p>
+          {mode === "blind" ? (
+            <div className="blind-visual"><LockKey weight="duotone" /><span>{Math.round((answered / test.questions.length) * 100)}%</span><small>{t(lang, "coverage")}</small></div>
+          ) : (
+            <div className="live-scores">
+              {liveScores.map(({ id, score }) => <div key={id}><span>{localize(DIMENSIONS[id].label, lang)}</span><strong>{score}</strong><i><em style={{ width: `${score}%`, background: DIMENSIONS[id].color }} /></i></div>)}
+            </div>
+          )}
+          <div className="quiz-method-note"><Info /><span>{t(lang, test.status === "public-domain" ? "publicDomainNote" : test.status === "interpretive" ? "validatedNote" : "exploratoryNote")}</span></div>
+        </aside>
+      </main>
+    </div>
+  );
+}
+
+function ResultScreen({ lang, completion, navigate }) {
+  const dimensions = Object.entries(completion.dimensions).filter(([, result]) => result.answered > 0).sort((a, b) => Math.abs(b[1].score - 50) - Math.abs(a[1].score - 50));
+  return (
+    <div className="page result-page">
+      <div className="result-hero">
+        <span className="result-check"><Check weight="bold" /></span>
+        <p className="eyebrow">{localize(completion.questionnaireTitle, lang)}</p>
+        <h1>{t(lang, "resultTitle")}</h1>
+        <p>{t(lang, "resultBody")}</p>
+        <div className="result-metrics">
+          <MetricCard icon={CheckCircle} label={t(lang, "coverage")} value={percentage(completion.coverage)} color="#65d694" />
+          <MetricCard icon={ShieldCheck} label={t(lang, "confidence")} value={percentage(completion.coverage)} color="#3fa7ff" />
+          <MetricCard icon={Sparkle} label={t(lang, "complexity")} value={`${completion.complexity}/100`} color="#9a7cff" />
+        </div>
+      </div>
+      <section className="result-dimensions panel-card">
+        <div className="card-heading"><div><p className="eyebrow">{t(lang, "topDrivers")}</p><h2>{t(lang, "identityLayers")}</h2></div></div>
+        {dimensions.map(([id, result]) => {
+          const dimension = DIMENSIONS[id];
+          return (
+            <div className="result-dimension" key={id}>
+              <div><span className="detail-dot" style={{ background: dimension.color }} /><strong>{localize(dimension.label, lang)}</strong><small>{localize(result.score >= 50 ? dimension.positivePole : dimension.negativePole, lang)}</small></div>
+              <div className="result-bar"><span style={{ width: `${result.score}%`, background: dimension.color }} /><i style={{ left: `${result.score}%` }} /></div>
+              <strong>{result.score}</strong>
+            </div>
+          );
+        })}
+      </section>
+      <div className="result-actions"><button className="primary-button" onClick={() => navigate("atlas")}>{t(lang, "openFullAtlas")}<ArrowRight /></button><button className="secondary-button" onClick={() => navigate("tests")}>{t(lang, "backTests")}</button></div>
+    </div>
+  );
+}
+
+function AtlasScreen({ lang, profile, isDemo }) {
+  const [view, setView] = useState("constellation");
+  const [groupFilter, setGroupFilter] = useState("all");
+  const available = Object.keys(profile.scores).filter((id) => DIMENSIONS[id]);
+  const [selectedId, setSelectedId] = useState(available[0] ?? "culturalPluralism");
+  return (
+    <div className="page atlas-page">
+      <SectionHeader
+        eyebrow={isDemo ? t(lang, "exampleData") : t(lang, "yourData")}
+        title={t(lang, "atlasTitle")}
+        body={t(lang, "atlasSubtitle")}
+        actions={<AtlasViewSwitcher view={view} setView={setView} lang={lang} />}
+      />
+      <div className="atlas-filters">
+        {ATLAS_GROUPS.filter(([id]) => id === "all" || Object.values(DIMENSIONS).some((dimension) => dimension.group === id && Number.isFinite(profile.scores[dimension.id]))).map(([id, key]) => (
+          <button key={id} className={groupFilter === id ? "active" : ""} onClick={() => setGroupFilter(id)}><i style={{ background: id === "all" ? "#dce9f5" : GROUPS[id]?.color }} />{t(lang, key)}</button>
+        ))}
+      </div>
+      {view === "constellation" ? <ConstellationView profile={profile} lang={lang} groupFilter={groupFilter} selectedId={selectedId} setSelectedId={setSelectedId} /> : null}
+      {view === "fieldbook" ? <FieldbookView profile={profile} lang={lang} selectedId={selectedId} setSelectedId={setSelectedId} /> : null}
+      {view === "terrain" ? <TerrainView profile={profile} lang={lang} groupFilter={groupFilter} selectedId={selectedId} setSelectedId={setSelectedId} /> : null}
+    </div>
+  );
+}
+
+function InsightsScreen({ lang, profile }) {
+  const metrics = getProfileMetrics(profile);
+  const top = getTopDimensions(profile, 5);
+  const tensions = getTensions(profile, 4);
+  if (!profile.hasData) return (
+    <div className="page"><SectionHeader title={t(lang, "insightsTitle")} body={t(lang, "insightsIntro")} /><div className="empty-state"><Lightbulb weight="duotone" /><h2>{t(lang, "noResults")}</h2></div></div>
+  );
+  return (
+    <div className="page insights-page">
+      <SectionHeader title={t(lang, "insightsTitle")} body={t(lang, "insightsIntro")} />
+      <div className="metric-grid three">
+        <MetricCard icon={ShieldCheck} label={t(lang, "confidence")} value={`${metrics.confidence}%`} note={`${metrics.layers} ${t(lang, "identityLayers").toLowerCase()}`} color="#3fa7ff" />
+        <MetricCard icon={Sparkle} label={t(lang, "complexity")} value={`${metrics.complexity}/100`} note={t(lang, "modelPrincipleBody")} color="#9a7cff" />
+        <MetricCard icon={ChartLineUp} label={t(lang, "coverage")} value={`${metrics.coverage}%`} note={t(lang, "overlapOnly")} color="#65d694" />
+      </div>
+      <div className="insight-layout">
+        <section className="panel-card narrative-list">
+          <div className="card-heading"><div><p className="eyebrow">{t(lang, "topDrivers")}</p><h2>{t(lang, "plainLanguage")}</h2></div></div>
+          {top.map(({ id, score, confidence }, index) => (
+            <article key={id}>
+              <span className="insight-number">0{index + 1}</span>
+              <div><h3>{localize(DIMENSIONS[id].label, lang)} <em>{score}</em></h3><p>{interpretDimension(id, score, lang)}</p><small>{Math.round(confidence * 100)}% {t(lang, "confidence").toLowerCase()}</small></div>
+            </article>
+          ))}
+        </section>
+        <section className="panel-card tensions-list">
+          <div className="card-heading"><div><p className="eyebrow">{t(lang, "tensions")}</p><h2>{t(lang, "threeViews")}</h2></div></div>
+          {tensions.length ? tensions.map(({ a, b, intensity }) => (
+            <article key={`${a}-${b}`}>
+              <div className="tension-icons"><i style={{ background: DIMENSIONS[a].color }} /><span>×</span><i style={{ background: DIMENSIONS[b].color }} /></div>
+              <h3>{localize(DIMENSIONS[a].label, lang)} ↔ {localize(DIMENSIONS[b].label, lang)}</h3>
+              <div className="tension-meter"><span style={{ width: `${intensity}%` }} /></div>
+              <small>{intensity}/100 · {t(lang, "tension")}</small>
+            </article>
+          )) : <p>{t(lang, "noResults")}</p>}
+        </section>
+      </div>
+    </div>
+  );
+}
+
+function HistoryScreen({ lang, state, setState }) {
+  const [expanded, setExpanded] = useState(null);
+  const history = [...state.history].reverse();
+  return (
+    <div className="page history-page">
+      <SectionHeader title={t(lang, "historyTitle")} body={t(lang, "historyIntro")} />
+      {!history.length ? <div className="empty-state"><ClockCounterClockwise weight="duotone" /><h2>{t(lang, "noHistory")}</h2></div> : (
+        <div className="history-timeline">
+          {history.map((completion, index) => {
+            const questionnaire = QUESTIONNAIRE_BY_ID[completion.questionnaireId];
+            const isOpen = expanded === completion.completedAt;
+            return (
+              <article key={`${completion.completedAt}-${index}`} className={isOpen ? "open" : ""}>
+                <span className="timeline-dot" style={{ background: questionnaire?.accent ?? "#3fa7ff" }} />
+                <button className="history-summary" onClick={() => setExpanded(isOpen ? null : completion.completedAt)}>
+                  <span><small>{dateLabel(completion.completedAt, lang)}</small><strong>{localize(questionnaire?.title ?? completion.questionnaireTitle, lang)}</strong><em>{completion.answered}/{completion.total} · {Math.round(completion.coverage * 100)}% {t(lang, "coverage").toLowerCase()}</em></span>
+                  <span className="history-score">{completion.complexity}<small>{t(lang, "complexity")}</small></span>
+                </button>
+                {isOpen ? <div className="history-details">{Object.entries(completion.dimensions).map(([id, result]) => <div key={id}><span>{localize(DIMENSIONS[id]?.label, lang)}</span><i><em style={{ width: `${result.score}%`, background: DIMENSIONS[id]?.color }} /></i><strong>{result.score}</strong></div>)}</div> : null}
+              </article>
+            );
+          })}
+        </div>
+      )}
+    </div>
+  );
+}
+
+function CompareScreen({ lang, state, setState, notify }) {
+  const inputRef = useRef(null);
+  const current = makeCurrentProfile(state);
+  const [selectedId, setSelectedId] = useState(state.importedProfiles[0]?.id ?? "");
+  const [includeMeta, setIncludeMeta] = useState(state.preferences.includeMetadataInExport);
+  const selected = state.importedProfiles.find((profile) => profile.id === selectedId);
+  const comparison = selected ? compareProfiles(current, selected) : null;
+
+  const exportCurrent = (includeRaw = false) => {
+    if (includeRaw && !window.confirm(t(lang, "rawWarning"))) return;
+    const capsule = createProfileCapsule(state, { includeMetadata: includeMeta, includeRaw });
+    downloadJson(capsule, `${(state.settings.alias || "mindcivilis-profile").replaceAll(" ", "-").toLowerCase()}.mindcivilis`);
+  };
+
+  const importFile = async (event) => {
+    const file = event.target.files?.[0];
+    if (!file) return;
+    try {
+      const profile = parseProfileCapsule(await file.text());
+      setState((currentState) => ({ ...currentState, importedProfiles: [...currentState.importedProfiles.filter((item) => item.id !== profile.id), profile] }));
+      setSelectedId(profile.id);
+      notify(t(lang, "profileImported"));
+    } catch {
+      notify(t(lang, "profileImportError"), "error");
+    } finally {
+      event.target.value = "";
+    }
+  };
+
+  const addExample = () => {
+    setState((currentState) => ({ ...currentState, importedProfiles: [...currentState.importedProfiles.filter((item) => item.id !== EXAMPLE_PROFILE.id), EXAMPLE_PROFILE] }));
+    setSelectedId(EXAMPLE_PROFILE.id);
+  };
+
+  return (
+    <div className="page compare-page">
+      <SectionHeader title={t(lang, "compareTitle")} body={t(lang, "compareIntro")} />
+      <div className="compare-toolbar panel-card">
+        <div className="export-box">
+          <span className="tool-icon"><Export weight="duotone" /></span>
+          <div><strong>{t(lang, "currentProfile")}</strong><small>{current.alias} · {Object.keys(current.scores).length} {t(lang, "identityLayers").toLowerCase()}</small></div>
+          <button onClick={() => exportCurrent(false)}><DownloadSimple />{t(lang, "exportProfile")}</button>
+          <button className="subtle" onClick={() => exportCurrent(true)}>{t(lang, "exportRaw")}</button>
+        </div>
+        <label className="check-row"><input type="checkbox" checked={includeMeta} onChange={(event) => { setIncludeMeta(event.target.checked); setState((currentState) => ({ ...currentState, preferences: { ...currentState.preferences, includeMetadataInExport: event.target.checked } })); }} /><span>{t(lang, "includeMetadata")}</span></label>
+        <div className="import-actions">
+          <input ref={inputRef} type="file" accept=".mindcivilis,.json,application/json" hidden onChange={importFile} />
+          <button className="secondary-button" onClick={() => inputRef.current?.click()}><FileArrowUp />{t(lang, "importProfile")}</button>
+          <button className="text-button" onClick={addExample}><UsersThree />{t(lang, "addExample")}</button>
+        </div>
+      </div>
+      <div className="profile-selector">
+        <span>{t(lang, "savedProfiles")}</span>
+        {state.importedProfiles.length ? state.importedProfiles.map((profile) => (
+          <button key={profile.id} className={selectedId === profile.id ? "active" : ""} onClick={() => setSelectedId(profile.id)}><span>{profile.alias.slice(0, 1).toUpperCase()}</span><strong>{profile.alias}</strong><small>{profile.isExample ? "Example" : dateLabel(profile.importedAt ?? profile.createdAt, lang)}</small></button>
+        )) : <button className="empty-profile" onClick={addExample}><UsersThree /><span>{t(lang, "selectProfile")}</span></button>}
+      </div>
+      {comparison ? (
+        <div className="comparison-grid">
+          <section className="panel-card compare-chart">
+            <div className="card-heading"><div><p className="eyebrow">{t(lang, "sharedCoverage")}</p><h2>{comparison.overlap} {t(lang, "identityLayers").toLowerCase()}</h2></div><span className="coverage-pill">{comparison.confidence}% {t(lang, "confidence").toLowerCase()}</span></div>
+            {comparison.rows.map((row) => (
+              <div className="compare-row" key={row.id}>
+                <span>{localize(DIMENSIONS[row.id].label, lang)}</span>
+                <div className="dual-track"><i className="current-marker" style={{ left: `${row.scoreA}%` }} title={`${current.alias}: ${row.scoreA}`} /><i className="other-marker" style={{ left: `${row.scoreB}%` }} title={`${selected.alias}: ${row.scoreB}`} /><em /></div>
+                <strong>{row.scoreA}<small> / </small>{row.scoreB}</strong>
+              </div>
+            ))}
+          </section>
+          <div className="compare-findings">
+            <section className="panel-card"><div className="card-heading"><div><p className="eyebrow">{t(lang, "commonGround")}</p></div></div>{comparison.commonGround.length ? comparison.commonGround.map((row) => <article key={row.id}><i style={{ background: DIMENSIONS[row.id].color }} /><div><strong>{localize(DIMENSIONS[row.id].label, lang)}</strong><span>{row.difference} {t(lang, "pointGap")}</span></div></article>) : <p>{t(lang, "overlapOnly")}</p>}</section>
+            <section className="panel-card"><div className="card-heading"><div><p className="eyebrow">{t(lang, "biggestDifferences")}</p></div></div>{comparison.differences.map((row) => <article key={row.id}><i className="difference" style={{ background: DIMENSIONS[row.id].color }} /><div><strong>{localize(DIMENSIONS[row.id].label, lang)}</strong><span>{row.difference} {t(lang, "pointGap")}</span></div></article>)}</section>
+          </div>
+        </div>
+      ) : <div className="empty-state"><UsersThree weight="duotone" /><h2>{t(lang, "selectProfile")}</h2><p>{t(lang, "overlapOnly")}</p></div>}
+    </div>
+  );
+}
+
+function ExploreScreen({ lang }) {
+  const [group, setGroup] = useState("all");
+  const dimensions = Object.values(DIMENSIONS).filter((dimension) => group === "all" || dimension.group === group);
+  return (
+    <div className="page explore-page">
+      <SectionHeader title={t(lang, "exploreTitle")} body={t(lang, "exploreIntro")} />
+      <section className="model-principle panel-card"><span><Compass weight="duotone" /></span><div><h2>{t(lang, "modelPrinciple")}</h2><p>{t(lang, "modelPrincipleBody")}</p></div></section>
+      <div className="filter-row">{ATLAS_GROUPS.map(([id, key]) => <button key={id} className={group === id ? "active" : ""} onClick={() => setGroup(id)}>{t(lang, key)}</button>)}</div>
+      <div className="dimension-grid">
+        {dimensions.map((dimension) => (
+          <article key={dimension.id} style={{ "--accent": dimension.color }}>
+            <span className="dimension-group">{localize(GROUPS[dimension.group]?.label, lang)}</span>
+            <h3>{localize(dimension.label, lang)}</h3>
+            <div className="pole-pair"><span>{localize(dimension.negativePole, lang)}</span><i /><span>{localize(dimension.positivePole, lang)}</span></div>
+            <p>{localize(dimension.description, lang)}</p>
+          </article>
+        ))}
+      </div>
+      <section className="inventory panel-card">
+        <div className="card-heading"><div><p className="eyebrow">{t(lang, "fullInventory")}</p><h2>{QUESTIONNAIRES.length} · {getDocumentedItemCount()} {t(lang, "questions")}</h2></div></div>
+        <div className="inventory-list">{QUESTIONNAIRES.map((test) => <div key={test.id}><i style={{ background: test.accent }} /><span>{localize(test.title, lang)}</span><strong>{test.questions.length}</strong><small>{t(lang, test.status === "public-domain" ? "publicDomainNote" : test.status === "interpretive" ? "validatedNote" : "exploratoryNote")}</small></div>)}</div>
+      </section>
+    </div>
+  );
+}
+
+function cohortLabel(value, dimension, lang) {
+  if (dimension === "country") {
+    return localize(COUNTRIES.find((country) => country.id === value)?.label ?? { en: value, hu: value, de: value }, lang);
+  }
+  if (dimension === "age") {
+    return localize(AGE_BANDS.find((band) => band.id === value)?.label ?? { en: value, hu: value, de: value }, lang);
+  }
+  return localize(COHORT_FALLBACK_LABELS[value] ?? { en: value, hu: value, de: value }, lang);
+}
+
+function ResearchScreen({ lang, state, profile, navigate }) {
+  const [dimension, setDimension] = useState("age");
+  const [cohorts, setCohorts] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [cohortError, setCohortError] = useState("");
+  const tracks = [
+    [CheckCircle, "trackQualityTitle", "trackQualityBody", "#65d694"],
+    [GlobeHemisphereWest, "trackLanguageTitle", "trackLanguageBody", "#3fa7ff"],
+    [Brain, "trackStructureTitle", "trackStructureBody", "#9a7cff"],
+    [MapTrifold, "trackDemographicTitle", "trackDemographicBody", "#e7b45a"],
+    [ClockCounterClockwise, "trackLongitudinalTitle", "trackLongitudinalBody", "#63c7d7"],
+    [Scales, "trackBiasTitle", "trackBiasBody", "#ef907b"],
+  ];
+  const tiers = [
+    ["R1", "tierOneTitle", "tierOneBody", state.research.mode === "research"],
+    ["R2", "tierTwoTitle", "tierTwoBody", false],
+    ["R3", "tierThreeTitle", "tierThreeBody", state.research.mode === "research"],
+  ];
+  const scoreIds = PRIMARY_ATLAS_DIMENSIONS.filter((id) => Number.isFinite(profile.scores?.[id])).slice(0, 6);
+
+  useEffect(() => {
+    let active = true;
+    if (state.research.mode !== "research") {
+      setCohorts([]);
+      return () => { active = false; };
+    }
+    setLoading(true);
+    setCohortError("");
+    fetchResearchCohorts(dimension)
+      .then((payload) => {
+        if (active) setCohorts(payload.cohorts ?? []);
+      })
+      .catch(() => {
+        if (active) setCohortError(t(lang, "cohortLoadError"));
+      })
+      .finally(() => {
+        if (active) setLoading(false);
+      });
+    return () => { active = false; };
+  }, [dimension, lang, state.research.mode]);
+
+  return (
+    <div className="page research-page">
+      <SectionHeader
+        eyebrow={t(lang, "researchTracksEyebrow")}
+        title={t(lang, "researchHubTitle")}
+        body={t(lang, "researchHubIntro")}
+        actions={<button className="secondary-button" onClick={() => navigate("settings")}><GearSix />{t(lang, "manageResearchChoice")}</button>}
+      />
+      <section className="research-status-grid">
+        <article className="panel-card collection-panel">
+          <p className="eyebrow">{t(lang, "researchStatusLabel")}</p>
+          <div className="collection-panel-title"><span><LockKey size={22} weight="duotone" /></span><div><h2>{t(lang, state.research.mode === "research" ? "researchStorageActive" : "privateStorageActive")}</h2><p>{t(lang, state.research.mode === "research" ? "researchStorageBody" : "privateStorageBody")}</p></div></div>
+          <div className="mode-readout"><span>{t(lang, "researchModeLabel")}</span><strong className={state.research.mode === "research" ? "research" : "private"}>{t(lang, state.research.mode === "research" ? "modeResearch" : "modePrivate")}</strong></div>
+        </article>
+        <article className="panel-card researcher-panel">
+          <p className="eyebrow">MindCivilis × research</p>
+          <h2>{t(lang, "researcherTitle")}</h2>
+          <p>{t(lang, "researcherBody")}</p>
+          <div className="researcher-links">
+            <a className="primary-button" href="https://janszkyjozsef.github.io/Ifj.-Janszky-J-zsef-Profil/#applications" target="_blank" rel="noreferrer">{t(lang, "openResearchProfile")}<Export /></a>
+            <a className="secondary-button" href="https://jozsef-janszky-portfolio.joe328.chatgpt.site/#applications" target="_blank" rel="noreferrer">{t(lang, "openSitesProfile")}<Export /></a>
+          </div>
+        </article>
+      </section>
+
+      <section className="cohort-section panel-card">
+        <div className="card-heading"><div><p className="eyebrow">01 · {t(lang, "cohortEyebrow")}</p><h2>{t(lang, "cohortTitle")}</h2></div><UsersThree size={28} weight="duotone" /></div>
+        <p>{t(lang, "cohortIntro")}</p>
+        {state.research.mode !== "research" ? (
+          <div className="cohort-locked"><LockKey weight="duotone" /><div><strong>{t(lang, "cohortConsentRequired")}</strong><p>{t(lang, "cohortConsentBody")}</p></div><button className="primary-button" onClick={() => navigate("settings")}>{t(lang, "manageResearchChoice")}</button></div>
+        ) : (
+          <>
+            <div className="cohort-controls">
+              <span>{t(lang, "compareBy")}</span>
+              {COHORT_DIMENSIONS.map(([id, key]) => <button key={id} className={dimension === id ? "active" : ""} onClick={() => setDimension(id)}>{t(lang, key)}</button>)}
+            </div>
+            {loading ? <div className="cohort-empty">{t(lang, "loading")}</div> : null}
+            {cohortError ? <div className="cohort-empty error">{cohortError}</div> : null}
+            {!loading && !cohortError && !cohorts.length ? <div className="cohort-empty"><UsersThree weight="duotone" /><strong>{t(lang, "cohortNotReady")}</strong><span>{t(lang, "cohortThreshold").replace("{count}", MIN_COHORT_SIZE)}</span></div> : null}
+            <div className="cohort-grid">
+              {cohorts.map((cohort) => (
+                <article key={cohort.label}>
+                  <header><div><strong>{cohortLabel(cohort.label, dimension, lang)}</strong><span>{cohort.count} {t(lang, "participants")}</span></div><span className="privacy-threshold"><ShieldCheck />n≥{MIN_COHORT_SIZE}</span></header>
+                  <div className="cohort-score-list">
+                    {scoreIds.filter((id) => Number.isFinite(cohort.scores?.[id])).map((id) => {
+                      const average = cohort.scores[id];
+                      const own = profile.scores[id];
+                      return (
+                        <div key={id}>
+                          <span>{localize(DIMENSIONS[id].label, lang)}</span>
+                          <div className="cohort-dual-track"><i style={{ width: `${average}%`, background: DIMENSIONS[id].color }} /><em style={{ left: `${own}%` }} title={`${t(lang, "yourData")}: ${own}`} /></div>
+                          <strong>{average}<small>{Number.isFinite(own) ? ` / ${own}` : ""}</small></strong>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </article>
+              ))}
+            </div>
+            {cohorts.length ? <p className="cohort-legend"><i />{t(lang, "cohortAverage")} <em />{t(lang, "yourProfileMarker")}</p> : null}
+          </>
+        )}
+      </section>
+
+      <section className="research-tracks-section">
+        <div className="card-heading"><div><p className="eyebrow">02 · {t(lang, "researchTracksEyebrow")}</p><h2>{t(lang, "researchTracksTitle")}</h2></div><ChartLineUp size={28} weight="duotone" /></div>
+        <div className="research-track-grid">
+          {tracks.map(([Icon, title, body, color], index) => (
+            <article key={title} style={{ "--track-color": color }}>
+              <span className="track-index">{String(index + 1).padStart(2, "0")}</span>
+              <span className="track-icon"><Icon size={22} weight="duotone" /></span>
+              <h3>{t(lang, title)}</h3>
+              <p>{t(lang, body)}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="data-tier-section panel-card">
+        <div className="card-heading"><div><p className="eyebrow">03 · {t(lang, "dataMinimisation")}</p><h2>{t(lang, "dataLayersTitle")}</h2></div><ShieldCheck size={28} weight="duotone" /></div>
+        <div className="data-tier-grid">
+          {tiers.map(([id, title, body, enabled]) => (
+            <article key={id} className={enabled ? "enabled" : ""}>
+              <span>{id}</span>
+              <div><h3>{t(lang, title)}</h3><p>{t(lang, body)}</p></div>
+              <i>{enabled ? <Check weight="bold" /> : <LockKey />}</i>
+            </article>
+          ))}
+        </div>
+        <div className="safeguard-note"><Info weight="fill" /><div><strong>{t(lang, "safeguardTitle")}</strong><span>{t(lang, "safeguardBody")}</span></div></div>
+        <ResearchNotice lang={lang} />
+      </section>
+    </div>
+  );
+}
+
+function SettingsScreen({ lang, state, setState, notify }) {
+  const [settings, setSettings] = useState(state.settings);
+  const [dataBusy, setDataBusy] = useState(false);
+  const regions = getRegions(settings.country);
+  const update = (key, value) => setSettings((current) => ({ ...current, [key]: value, ...(key === "country" ? { region: "" } : {}) }));
+  const save = () => {
+    setState((current) => ({ ...current, settings }));
+    notify(t(lang, "settingsSaved"));
+  };
+  const exportResearch = async () => {
+    if (!state.research.participantToken) return notify(t(lang, "researchTokenMissing"), "error");
+    setDataBusy(true);
+    try {
+      downloadResearchExport(await participationAction(state.research.participantToken, "export"));
+      notify(t(lang, "researchExportReady"));
+    } catch {
+      notify(t(lang, "researchDataActionError"), "error");
+    } finally {
+      setDataBusy(false);
+    }
+  };
+  const withdrawResearch = async () => {
+    if (!window.confirm(t(lang, "researchDeleteConfirm"))) return;
+    setDataBusy(true);
+    try {
+      if (state.research.participantToken) await participationAction(state.research.participantToken, "delete");
+      setState((current) => ({
+        ...current,
+        research: { ...initialState.research, mode: "private", decisionAt: new Date().toISOString() },
+      }));
+      notify(t(lang, "researchDeleted"));
+    } catch {
+      notify(t(lang, "researchDataActionError"), "error");
+    } finally {
+      setDataBusy(false);
+    }
+  };
+  const removeAll = async () => {
+    if (!window.confirm(t(lang, "deleteConfirm"))) return;
+    setDataBusy(true);
+    try {
+      if (state.research.participantToken) await participationAction(state.research.participantToken, "delete");
+      clearState();
+      setState({ ...initialState, language: lang });
+      setSettings(initialState.settings);
+      notify(t(lang, "deleteDone"));
+    } catch {
+      notify(t(lang, "researchDataActionError"), "error");
+    } finally {
+      setDataBusy(false);
+    }
+  };
+  return (
+    <div className="page settings-page">
+      <SectionHeader title={t(lang, "settingsTitle")} body={t(lang, "settingsIntro")} />
+      <div className="settings-layout">
+        <section className="panel-card settings-form">
+          <div className="card-heading"><div><p className="eyebrow">{t(lang, "dataMinimisation")}</p><h2>{t(lang, "currentProfile")}</h2></div><ShieldCheck weight="duotone" /></div>
+          <label><span>{t(lang, "alias")}</span><input value={settings.alias} maxLength={80} placeholder={t(lang, "aliasPlaceholder")} onChange={(event) => update("alias", event.target.value)} /></label>
+          <div className="form-grid">
+            <label><span>{t(lang, "ageBand")}</span><select value={settings.ageBand} onChange={(event) => update("ageBand", event.target.value)}><option value="">{t(lang, "choose")}</option>{AGE_BANDS.map((band) => <option key={band.id} value={band.id}>{localize(band.label, lang)}</option>)}</select></label>
+            <label><span>{t(lang, "country")}</span><select value={settings.country} onChange={(event) => update("country", event.target.value)}><option value="">{t(lang, "choose")}</option>{COUNTRIES.map((country) => <option key={country.id} value={country.id}>{localize(country.label, lang)}</option>)}</select></label>
+            <label><span>{t(lang, "broadRegion")}</span><select value={settings.region} disabled={!settings.country} onChange={(event) => update("region", event.target.value)}><option value="">{t(lang, "choose")}</option>{regions.map((region) => <option key={region.id} value={region.id}>{localize(region.label, lang)}</option>)}</select></label>
+          </div>
+          <p className="form-hint"><Info />{t(lang, "metadataHint")} {t(lang, "exactAge")}</p>
+          <button className="primary-button" onClick={save}><FloppyDisk />{t(lang, "saveSettings")}</button>
+        </section>
+        <section className="panel-card research-card">
+          <div className="card-heading"><div><p className="eyebrow">{t(lang, "researchStatusLabel")}</p><h2>{t(lang, state.research.mode === "research" ? "modeResearch" : "modePrivate")}</h2></div><HandHeart weight="duotone" /></div>
+          <p>{t(lang, state.research.mode === "research" ? "researchStorageBody" : "privateStorageBody")}</p>
+          <div className="research-purpose"><Info weight="fill" /><span>{t(lang, "researchPurpose")}</span></div>
+          {state.research.mode === "research" ? (
+            <>
+              <div className="research-receipt">
+                <span><strong>{t(lang, "gender")}</strong>{t(lang, GENDER_OPTIONS.find(([id]) => id === state.research.gender)?.[1] ?? "preferNot")}</span>
+                <span><strong>{t(lang, "settlementType")}</strong>{t(lang, SETTLEMENT_OPTIONS.find(([id]) => id === state.research.settlementType)?.[1] ?? "preferNot")}</span>
+                <span><strong>{t(lang, "country")}</strong>{cohortLabel(state.research.country, "country", lang)}</span>
+                <span><strong>{t(lang, "exactAgeResearch")}</strong>{state.research.age}</span>
+              </div>
+              <div className="research-data-actions">
+                <button className="secondary-button" disabled={dataBusy} onClick={exportResearch}><DownloadSimple />{t(lang, "downloadResearchData")}</button>
+                <button className="danger-button" disabled={dataBusy} onClick={withdrawResearch}><Trash />{t(lang, "deleteResearchData")}</button>
+              </div>
+            </>
+          ) : (
+            <button className="primary-button" onClick={() => setState((current) => ({ ...current, research: { ...initialState.research, mode: null } }))}><HandHeart />{t(lang, "reviewResearchConsent")}</button>
+          )}
+          <ResearchNotice lang={lang} />
+        </section>
+      </div>
+      <section className="privacy-sources panel-card">
+        <div><h2>{t(lang, "privacySources")}</h2><p>{t(lang, "staysHere")}</p></div>
+        <div className="source-links">
+          <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX%3A02016R0679-20160504" target="_blank" rel="noreferrer">EU GDPR <ArrowRight /></a>
+          <a href="https://www.edpb.europa.eu/documents/guideline/guidelines-052020-on-consent-under-regulation-2016679_en" target="_blank" rel="noreferrer">EDPB consent guidance <ArrowRight /></a>
+          <a href="https://ec.europa.eu/eurostat/web/nuts" target="_blank" rel="noreferrer">Eurostat NUTS <ArrowRight /></a>
+        </div>
+        <button className="danger-button" disabled={dataBusy} onClick={removeAll}><Trash />{t(lang, "deleteAll")}</button>
+      </section>
+    </div>
+  );
+}
+
+export function App() {
+  const [state, setState] = useMindCivilisState();
+  const lang = state.language;
+  const [screen, setScreen] = useState("home");
+  const [testId, setTestId] = useState(null);
+  const [result, setResult] = useState(null);
+  const [mobileNavOpen, setMobileNavOpen] = useState(false);
+  const [toast, setToast] = useState(null);
+  const profile = useMemo(() => buildProfile(state.history), [state.history]);
+  const atlasProfile = profile.hasData ? profile : {
+    scores: DEMO_SCORES,
+    confidence: Object.fromEntries(Object.keys(DEMO_SCORES).map((id) => [id, 0.72])),
+    evidence: Object.fromEntries(Object.keys(DEMO_SCORES).map((id) => [id, { questionnaireId: "MindCivilis example", answered: 8, total: 10 }])),
+    hasData: false,
+  };
+
+  const notify = (message, tone = "success") => {
+    setToast({ message, tone });
+    window.setTimeout(() => setToast(null), 4200);
+  };
+  const navigate = (next) => {
+    setScreen(next);
+    setTestId(null);
+    setResult(null);
+    setMobileNavOpen(false);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+  const startTest = (id) => {
+    setTestId(id);
+    setResult(null);
+    setScreen("quiz");
+    window.scrollTo({ top: 0 });
+  };
+  const changeLanguage = (language) => setState((current) => ({ ...current, language }));
+  const handleCompletion = (completion) => {
+    setResult(completion);
+    setScreen("result");
+    if (state.research.mode !== "research" || !state.research.participantToken) return;
+    const nextProfile = buildProfile([...state.history, completion]);
+    submitResearchProfile({
+      token: state.research.participantToken,
+      profile: nextProfile,
+      completion,
+    }).then(() => {
+      setState((current) => ({
+        ...current,
+        research: { ...current.research, lastSubmittedAt: new Date().toISOString() },
+      }));
+      notify(t(lang, "researchProfileSaved"));
+    }).catch(() => notify(t(lang, "researchProfileSaveError"), "error"));
+  };
+
+  if (screen === "quiz" && testId) {
+    return <QuizScreen lang={lang} state={state} setState={setState} test={QUESTIONNAIRE_BY_ID[testId]} onExit={() => navigate("tests")} onComplete={handleCompletion} />;
+  }
+
+  return (
+    <div className="app-shell">
+      <aside className={classNames("sidebar", mobileNavOpen && "mobile-open")}>
+        <div className="sidebar-top"><Brand lang={lang} /><button className="mobile-close icon-button" onClick={() => setMobileNavOpen(false)}><X /></button></div>
+        <nav>
+          {NAV.map(([id, key, Icon]) => <button key={id} className={screen === id ? "active" : ""} onClick={() => navigate(id)}><Icon size={19} weight={screen === id ? "fill" : "regular"} /><span>{t(lang, key)}</span></button>)}
+        </nav>
+        <div className="sidebar-privacy"><ShieldCheck size={21} weight="duotone" /><div><strong>{t(lang, "privateByDesign")}</strong><span>{t(lang, state.research.mode === "research" ? "pseudonymousStorage" : "localOnly")}</span></div></div>
+        <div className="sidebar-bottom">
+          <a className="sidebar-profile-link" href={RESEARCH_PROFILE_URL} aria-label={t(lang, "navProfile")} title={t(lang, "navProfile")}>
+            <UserCircle size={19} weight="duotone" />
+            <span>{t(lang, "navProfile")}</span>
+          </a>
+          <button className={screen === "settings" ? "active" : ""} onClick={() => navigate("settings")}><GearSix /><span>{t(lang, "navSettings")}</span></button>
+          <LanguageSwitch lang={lang} onChange={changeLanguage} compact />
+        </div>
+      </aside>
+      <div className="workspace">
+        <header className="topbar">
+          <button className="mobile-menu" onClick={() => setMobileNavOpen(true)}><List /></button>
+          <Brand lang={lang} compact />
+          <div className="topbar-right"><span className="local-status"><LockKey weight="fill" />{t(lang, state.research.mode === "research" ? "storageStatusResearch" : "localOnly")}</span><LanguageSwitch lang={lang} onChange={changeLanguage} /></div>
+        </header>
+        <main className="main-content">
+          {screen === "home" ? <HomeScreen lang={lang} state={state} profile={profile} navigate={navigate} startTest={startTest} /> : null}
+          {screen === "tests" ? <TestsScreen lang={lang} state={state} startTest={startTest} /> : null}
+          {screen === "result" && result ? <ResultScreen lang={lang} completion={result} navigate={navigate} /> : null}
+          {screen === "atlas" ? <AtlasScreen lang={lang} profile={atlasProfile} isDemo={!profile.hasData} /> : null}
+          {screen === "insights" ? <InsightsScreen lang={lang} profile={profile} /> : null}
+          {screen === "history" ? <HistoryScreen lang={lang} state={state} setState={setState} /> : null}
+          {screen === "compare" ? <CompareScreen lang={lang} state={state} setState={setState} notify={notify} /> : null}
+          {screen === "research" ? <ResearchScreen lang={lang} state={state} profile={profile} navigate={navigate} /> : null}
+          {screen === "explore" ? <ExploreScreen lang={lang} /> : null}
+          {screen === "settings" ? <SettingsScreen lang={lang} state={state} setState={setState} notify={notify} /> : null}
+        </main>
+      </div>
+      {mobileNavOpen ? <button className="mobile-overlay" onClick={() => setMobileNavOpen(false)} aria-label="Close navigation" /> : null}
+      {!state.research.mode ? <ResearchEntryModal lang={lang} state={state} setState={setState} onLanguageChange={changeLanguage} /> : null}
+      <Toast message={toast?.message} tone={toast?.tone} onClose={() => setToast(null)} />
+    </div>
+  );
 }
